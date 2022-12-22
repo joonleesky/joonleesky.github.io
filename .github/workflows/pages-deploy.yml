@@ -2,7 +2,9 @@ name: "Build and Deploy"
 on:
   push:
     branches:
-      - [master, main, default]
+      - master 
+      - main
+      - default
     paths-ignore:
       - .gitignore
       - README.md
