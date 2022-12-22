@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 3
 ---
 
 
@@ -15,7 +15,7 @@ and received a B.S degree in CS at **Korea University**, 2020. <br>
 
 &nbsp;&nbsp;[**CV**][cv] &nbsp;·&nbsp; [**github**][github_link] &nbsp;·&nbsp; **joonleesky@kaist.ac.kr** <br>
 
-Last updated: Dec 22, 2022
+Last updated: Dec 23, 2022
 <br><br><br>
 
 ## Research Interests
