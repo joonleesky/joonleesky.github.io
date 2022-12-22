@@ -85,4 +85,4 @@ Preprint, 2021. <br>
 [jaegul_choo_google_link]: https://sites.google.com/site/jaegulchoo/
 [davian_link]: http://davian.kaist.ac.kr/
 [github_link]:https://github.com/joonleesky
-[cv]: https://drive.google.com/file/d/10DUnW_HVZ7GZ9TK4_LJS4w9aaVtRZEnN/view?usp=sharing
+[cv]: https://drive.google.com/file/d/1Ay8pS_bMZ_6lMiN_OzLPfRQEQK5vVqyq/view?usp=sharing
