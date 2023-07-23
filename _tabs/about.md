@@ -4,17 +4,20 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-![profile](../assets/images/profile.png){: .left w="270 h="270" .shadow}
+<div style="display: flex; align-items: center; margin-top:-4%">
+ <img src="../assets/images/profile.png" style="width: 35%; height: 35%; margin-right: 3%; ">
+ <div>
+   <p> I am a second year Ph.D. student in KAIST AI, advised by <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>. Previously, I received a M.S degree in KAIST AI at 2022, and received a B.S degree in CS at Korea University, 2020. <br> <br>
 
-I am a second year Ph.D. student in KAIST AI, advised by [Jaegul Choo][jaegul_choo_google_link]. <br>
-Previously, I received a M.S degree in KAIST AI at 2022, <br>
-and received a B.S degree in CS at Korea University, 2020. <br>
-
-I am broadly interested in <b>Representation Learning for Decision Making</b>. Specifically, I am interested in extracting representations from high-dimensional, unstructured data such as images, videos, and languages. Then, my goal is to leverage these representations to enhance decision making in various applications such as games, sports, and robotics.
+My research interest lies in <b>Representation Learning </b> and its application to <b> Decision Making</b>. 
+I aim to develop effective representation learning method for decision making from high-dimensional, unstructured data such as images, videos, and languages. Then, my goal is to leverage these representations to enhance decision making in real-world applications such as games, sports, and robotics.
+  </p>
+ </div>
+</div>
 
 <div align="center">
 
-<a href="../assets/pdf/cv_20230723.pdf">CV</a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky">github</a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
+<a href="../assets/pdf/cv_20230723.pdf"><strong>CV</strong></a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky"><strong>github</strong></a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
 
 Last updated: July 23, 2023
 
@@ -25,8 +28,8 @@ Last updated: July 23, 2023
 
 ## Representation Learning
 
-<div style="display: flex; align-items: center; margin-top: -20px">
-    <img src="../assets/images/about/gpa.png" style="width: 230px; height: 175px; margin-right: 40px; margin-top:40px;">
+<div style="display: flex; align-items: center; margin-top:-4%">
+    <img src="../assets/images/about/gpa.png" style="width: 30%; height: 30%; margin-top: 6%; margin-right: 3%; ">
     <div>
         <h5> Enhancing Generalization and Plasticity for Sample Efficient Reinforcement Learning</h5>
         <p> <strong>Hojoon Lee*</strong>, Hanseul Cho*, Hyunseung Kim*, Daehoon Gwak, Joonkee Kim, Jaegul Choo, Se-Young Yun, Chulhee Yun. Preprint 2023. <br>
@@ -35,7 +38,7 @@ Last updated: July 23, 2023
 </div>
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/simtpr.png" style="width: 230px; height: 180px; margin-right: 40px;  margin-top:40px;">
+    <img src="../assets/images/about/simtpr.png" style="width: 30%; height: 30%; margin-top: 7%; margin-right: 3%; ">
     <div>
         <h5> On the Importance of Feature Decorrelation for Unsupervised Representation Learning for Reinforcement Learning</h5>
         <p><strong>Hojoon Lee</strong>, Koanho Lee, Dongyoon Hwang, Hyunho Lee, Byungkun Lee, and Jaegul Choo. ICML 2023. <br>
@@ -46,7 +49,7 @@ Last updated: July 23, 2023
 </div>
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/c2bin.png" style="width: 230px; height: 100px; margin-right: 40px; margin-top:30px">
+    <img src="../assets/images/about/c2bin.png" style="width: 30%; height: 12%; margin-top: 6%; margin-right: 3%;">
     <div>
         <h5> Learning Representations by Contrasting Clusters while Bootstrapping Instances.</h5>
         <p>Junsoo Lee*, <strong>Hojoon Lee*</strong>, Inkyu Shin, Jaekyoung Bae, Inso Kweon, <br> and Jaegul Choo. Preprint 2021. <br>
@@ -57,8 +60,8 @@ Last updated: July 23, 2023
 
 ## Applications 
 
-<div style="display: flex; align-items: center; margin-top: -20px">
-    <img src="../assets/images/about/aiao_method.png" style="width: 230px; height: 190px; margin-right: 40px; margin-top:35px;">
+<div style="display: flex; align-items: center; margin-top:-4%">
+    <img src="../assets/images/about/aiao_method.png" style="width: 30%; height: 25%; margin-top: 6%; margin-right: 3%; ">
     <div>
         <h5> Towards Risk-Minimized and Fairness-Maximized <br> Evaluation in College Admission</h5>
         <p>Byungkun Lee*, <strong>Hojoon Lee*</strong>, Hyunseung Kim, Minseok Choi, <br> Sungju Hwang, Edward Choi, and Jaegul Choo. Preprint 2023. <br>
@@ -68,7 +71,7 @@ Last updated: July 23, 2023
 
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/revisit_sigir.png" style="width: 230px; height: 85px; margin-right: 40px; margin-top:20px;">
+    <img src="../assets/images/about/revisit_sigir.png" style="width: 30%; height: 13%; margin-top: 6%; margin-right: 3%; ">
     <div>
         <h5> Towards Validating Long-Term User Feedbacks in Interactive Recommender System</h5>
         <p><strong>Hojoon Lee</strong>, Dongyoon Hwang, Kyusik Min, and Jaegul Choo. <br>
@@ -80,7 +83,7 @@ Last updated: July 23, 2023
 
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/draftrec_fig.jpg" style="width: 230px; height: 150px; margin-right: 40px; margin-top:35px;">
+    <img src="../assets/images/about/draftrec_fig.jpg" style="width: 30%; height: 20%; margin-top: 5%; margin-right: 3%; ">
     <div>
         <h5> DraftRec: Personalized Draft Recommendation for Winning <br> in Multiplayer Online Battle Arena Games.</h5>
         <p><strong>Hojoon Lee*</strong>, Dongyoon Hwang*, HyunSeung Kim, Byungkun Lee, <br> and Jaegul Choo. WWW 2022. <br>
@@ -91,7 +94,7 @@ Last updated: July 23, 2023
 </div>
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/gunshot.png" style="width: 230px; height: 130px; margin-right: 40px; margin-top:35px;">
+    <img src="../assets/images/about/gunshot.png" style="width: 30%; height: 18%; margin-top: 6%; margin-right: 3%; ">
     <div>
         <h5> Enemy Spotted: In-game Gun Sound Dataset for Gunshot Classification and Localization.</h5>
         <p>Junwoo Park, Youngwoo Cho, Gyuhyeon Sim, <strong>Hojoon Lee</strong>, and <br> Jaegul Choo. COG 2022. <br>
