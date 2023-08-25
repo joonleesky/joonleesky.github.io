@@ -19,7 +19,7 @@ I aim to develop effective representation learning method for decision making fr
 
 <a href="../assets/pdf/cv_20230825.pdf"><strong>CV</strong></a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky"><strong>github</strong></a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
 
-Last updated: July 23, 2023
+Last updated: Aug 25, 2023
 
 </div>
 
@@ -74,8 +74,7 @@ Last updated: July 23, 2023
     <img src="../assets/images/about/strap.png" style="width: 30%; height: 15%; margin-top: 2%; margin-right: 3%; ">
     <div>
         <h5> ST-RAP: A Spatio-Temporal Framework for Real Estate Appraisal</h5>
-        <p><strong>Hojoon Lee*</strong>, Hawon Jeong*, Byungkun Lee*, Kyungyup Lee, and Jaegul Choo. <br>
-        CIKM 2023 (short). <br>
+        <p><strong>Hojoon Lee*</strong>, Hawon Jeong*, Byungkun Lee*, Kyungyup Lee, and Jaegul Choo. CIKM 2023 (short). <br>
         <a href="https://arxiv.org/abs/2308.10609">[paper]</a></p>
     </div>
 </div>
