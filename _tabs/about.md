@@ -17,7 +17,7 @@ I aim to develop effective representation learning method for decision making fr
 
 <div align="center">
 
-<a href="../assets/pdf/cv_20230723.pdf"><strong>CV</strong></a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky"><strong>github</strong></a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
+<a href="../assets/pdf/cv_20230825.pdf"><strong>CV</strong></a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky"><strong>github</strong></a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
 
 Last updated: July 23, 2023
 
