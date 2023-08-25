@@ -71,7 +71,18 @@ Last updated: July 23, 2023
 
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/revisit_sigir.png" style="width: 30%; height: 13%; margin-top: 6%; margin-right: 3%; ">
+    <img src="../assets/images/about/strap.png" style="width: 30%; height: 15%; margin-top: 2%; margin-right: 3%; ">
+    <div>
+        <h5> ST-RAP: A Spatio-Temporal Framework for Real Estate Appraisal</h5>
+        <p><strong>Hojoon Lee*</strong>, Hawon Jeong*, Byungkun Lee*, Kyungyup Lee, and Jaegul Choo. <br>
+        CIKM 2023 (short). <br>
+        <a href="https://arxiv.org/abs/2308.10609">[paper]</a></p>
+    </div>
+</div>
+
+
+<div style="display: flex; align-items: center;">
+    <img src="../assets/images/about/revisit_sigir.png" style="width: 30%; height: 13%; margin-top: 1%; margin-right: 3%; ">
     <div>
         <h5> Towards Validating Long-Term User Feedbacks in Interactive Recommender System</h5>
         <p><strong>Hojoon Lee</strong>, Dongyoon Hwang, Kyusik Min, and Jaegul Choo. <br>
