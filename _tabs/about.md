@@ -17,9 +17,9 @@ I aim to develop effective representation learning method for decision making fr
 
 <div align="center">
 
-<a href="../assets/pdf/cv_20230825.pdf"><strong>CV</strong></a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky"><strong>github</strong></a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
+<a href="../assets/pdf/cv_20230922.pdf"><strong>CV</strong></a> &nbsp;·&nbsp; <a href="https://github.com/joonleesky"><strong>github</strong></a> &nbsp;·&nbsp; joonleesky@kaist.ac.kr <br>
 
-Last updated: Aug 25, 2023
+Last updated: Sep 22, 2023
 
 </div>
 
@@ -29,13 +29,22 @@ Last updated: Aug 25, 2023
 ## Representation Learning
 
 <div style="display: flex; align-items: center; margin-top:-4%">
-    <img src="../assets/images/about/gpa.png" style="width: 30%; height: 30%; margin-top: 6%; margin-right: 3%; ">
+    <img src="../assets/images/about/gpa.png" style="width: 30%; height: 30%; margin-top: 5%; margin-right: 3%; ">
     <div>
-        <h5> Enhancing Generalization and Plasticity for Sample Efficient Reinforcement Learning</h5>
-        <p> <strong>Hojoon Lee*</strong>, Hanseul Cho*, Hyunseung Kim*, Daehoon Gwak, Joonkee Kim, Jaegul Choo, Se-Young Yun, Chulhee Yun. Preprint 2023. <br>
+        <h5> Enhancing Input and Label Plasticity for Sample Efficient Reinforcement Learning</h5>
+        <p> <strong>Hojoon Lee*</strong>, Hanseul Cho*, Hyunseung Kim*, Daehoon Gwak, Joonkee Kim, Jaegul Choo, Se-Young Yun, Chulhee Yun. NeurIPS 2023. <br>
         <a href="https://arxiv.org/abs/2306.10711">[paper]</a></p>
     </div>
 </div>
+
+<div style="display: flex; align-items: center;">
+    <img src="../assets/images/about/disco.gif" style="width: 30%; height: 40%; margin-top: 4%; margin-right: 3%; ">
+    <div>
+        <h5> Learning to Discover Skills through Guidance </h5>
+        <p> Hyunseung Kim*, Byungkun Lee*, <strong>Hojoon Lee</strong>, Dongyoon Hwang, Kyushik Min, Sejik Park, Jaegul Choo. NeurIPS 2023. <br> </p>
+    </div>
+</div>
+
 
 <div style="display: flex; align-items: center;">
     <img src="../assets/images/about/simtpr.png" style="width: 30%; height: 30%; margin-top: 7%; margin-right: 3%; ">
@@ -61,16 +70,6 @@ Last updated: Aug 25, 2023
 ## Applications 
 
 <div style="display: flex; align-items: center; margin-top:-4%">
-    <img src="../assets/images/about/aiao_method.png" style="width: 30%; height: 25%; margin-top: 6%; margin-right: 3%; ">
-    <div>
-        <h5> Towards Risk-Minimized and Fairness-Maximized <br> Evaluation in College Admission</h5>
-        <p>Byungkun Lee*, <strong>Hojoon Lee*</strong>, Hyunseung Kim, Minseok Choi, <br> Sungju Hwang, Edward Choi, and Jaegul Choo. Preprint 2023. <br>
-        <a href="https://drive.google.com/file/d/1AaDpF-hB7cq8hXfyySdc7EPYW4PNFti7/view?usp=sharing">[paper]</a></p>
-    </div>
-</div>
-
-
-<div style="display: flex; align-items: center;">
     <img src="../assets/images/about/strap.png" style="width: 30%; height: 15%; margin-top: 2%; margin-right: 3%; ">
     <div>
         <h5> ST-RAP: A Spatio-Temporal Framework for Real Estate Appraisal</h5>
@@ -85,7 +84,7 @@ Last updated: Aug 25, 2023
     <div>
         <h5> Towards Validating Long-Term User Feedbacks in Interactive Recommender System</h5>
         <p><strong>Hojoon Lee</strong>, Dongyoon Hwang, Kyusik Min, and Jaegul Choo. <br>
-        SIGIR 2022 (Best Short Paper Honorable Mention). <br>
+        SIGIR 2022 (short, Honorable Mention). <br>
         <a href="https://dl.acm.org/doi/abs/10.1145/3477495.3531869">[paper]</a>
         <a href="https://drive.google.com/file/d/13PEGDMrfZaG-PcCp0tx-A_L_2E1MKqQm/view?usp=sharing">[poster]</a></p>
     </div>
