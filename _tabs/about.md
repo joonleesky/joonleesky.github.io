@@ -38,7 +38,7 @@ Last updated: Sep 22, 2023
 </div>
 
 <div style="display: flex; align-items: center;">
-    <img src="../assets/images/about/disco.gif" style="width: 30%; height: 40%; margin-top: 4%; margin-right: 3%; ">
+    <img src="../assets/images/about/disco.gif" style="width: 25%; height: 40%; margin-top: 4%; margin-right: 8%; ">
     <div>
         <h5> Learning to Discover Skills through Guidance </h5>
         <p> Hyunseung Kim*, Byungkun Lee*, <strong>Hojoon Lee</strong>, Dongyoon Hwang, Kyushik Min, Sejik Park, Jaegul Choo. NeurIPS 2023. <br> </p>
