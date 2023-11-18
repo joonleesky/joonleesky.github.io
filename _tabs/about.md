@@ -14,7 +14,7 @@ order: 3
 
 <div align="center" style="margin-right: 4%;">
 
-<a href="joonleesky@kaist.ac.kr">Email</a> &nbsp;·&nbsp;
+<a href="mailto:joonleesky@kaist.ac.kr">Email</a> &nbsp;·&nbsp;
 <a href="../assets/pdf/cv_20231118.pdf">CV</a> &nbsp;·&nbsp; 
 <a href="https://scholar.google.com/citations?user=g0R5CDMAAAAJ&hl=ko">Scholar</a> &nbsp;·&nbsp; 
 <a href="https://github.com/joonleesky">Github</a> <br>
