@@ -11,6 +11,6 @@ pdf_local: "/assets/pdf/understanding_plasticity.pdf"
 
 ## Papers
 
-* Understanding Deep Learning requires rethinking Generalization. Zhang et al., NeurIPS 2017.
-* A Closer Look at Memorization in Deep Networks. Arpit et al., ICLR 2017.
-* What Neural Networks Memorize and Why: Discovering the Long Tail via Influence Estimation. Feldman et al., NeurIPS 2020.
+* On Warm-Starting Neural Network Training., NeurIPS 2020.
+* Loss of Plasticity in Deep Continual Learning., CoLLA 2022 talk.
+* Curvature explains Loss of Plasticity., submitted to ICLR 2024.
