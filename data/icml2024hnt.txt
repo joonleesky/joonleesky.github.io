@@ -1,0 +1,6 @@
+@article{lee2024slow,
+  title={Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks},
+  author={Lee, Hojoon and Cho, Hyeonseo and Kim, Hyunseung and Kim, Donghu and Min, Dugki and Choo, Jaegul and Lyle, Clare},
+  journal={arXiv preprint arXiv:2406.02596},
+  year={2024}
+}

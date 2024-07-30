@@ -1,0 +1,6 @@
+@article{hwang2024adapting,
+  title={Adapting Pretrained ViTs with Convolution Injector for Visuo-Motor Control},
+  author={Hwang, Dongyoon and Lee, Byungkun and Lee, Hojoon and Kim, Hyunseung and Choo, Jaegul},
+  journal={arXiv preprint arXiv:2406.06072},
+  year={2024}
+}
