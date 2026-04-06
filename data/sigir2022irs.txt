@@ -1,0 +1,7 @@
+@inproceedings{lee2022towards,
+  title={Towards Validating Long-Term User Feedbacks in Interactive Recommendation Systems},
+  author={Lee, Hojoon and Hwang, Dongyoon and Min, Kyushik and Choo, Jaegul},
+  booktitle={Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={2607--2611},
+  year={2022}
+}

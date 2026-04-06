@@ -1,0 +1,7 @@
+@inproceedings{lee2023st,
+  title={St-rap: A spatio-temporal framework for real estate appraisal},
+  author={Lee, Hojoon and Jeong, Hawon and Lee, Byungkun and Lee, Kyungyup Daniel and Choo, Jaegul},
+  booktitle={Proceedings of the 32nd ACM International Conference on Information and Knowledge Management},
+  pages={4053--4058},
+  year={2023}
+}

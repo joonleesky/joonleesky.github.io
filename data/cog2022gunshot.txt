@@ -1,0 +1,8 @@
+@inproceedings{park2022enemy,
+  title={Enemy Spotted: in-game gun sound dataset for gunshot classification and localization},
+  author={Park, Junwoo and Cho, Youngwoo and Sim, Gyuhyeon and Lee, Hojoon and Choo, Jaegul},
+  booktitle={2022 IEEE Conference on Games (CoG)},
+  pages={56--63},
+  year={2022},
+  organization={IEEE}
+}

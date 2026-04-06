@@ -1,0 +1,1029 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157941252-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-157941252-1');
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+
+  <title>Hojoon Lee</title>
+
+  <meta name="author" content="Hojoon Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="pictures/personal_round.png">
+
+  <style>
+    .publication-filter {
+      display: block;
+      margin-left: 0;
+      margin-top: 5px;
+    }
+    .filter-btn {
+      background: none;
+      border: none;
+      color: #1772d0;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 0 5px;
+      font-family: inherit;
+    }
+    .filter-btn:hover {
+      text-decoration: none;
+      color: orange;
+    }
+    .filter-btn.active {
+      color: #1772d0;
+      font-weight: bold;
+    }
+    .publication-entry {
+      transition: opacity 0.3s ease, height 0.3s ease;
+    }
+    .publication-entry.hidden {
+      display: none;
+    }
+    /* Style for the Simba GIF to crop the top */
+    .paper-images {
+      width: 100%;
+      height: auto;
+    }
+    .cropped-gif {
+      width: 100%;
+      clip-path: inset(20% 0 20% 0);
+    }
+    .spotlight {
+        color: orange;
+        font-weight: bold;
+      }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-sm-4 name-column" style="min-width: 266px;">
+        <p style="text-align:center">
+          <name>Hojoon Lee</name>
+        </p>
+      </div>
+      <div class="col-sm-8 name-column text-right" style="min-width: 266px; margin-top: 10px">
+      </div>
+    </div>
+    <div class="row common-rows">
+
+      <div class="col-xs-12 col-sm-8 personal-column">
+        <p> 
+        Hello! I'm Hojoon Lee, a Senior Research Scientist at <a href="https://www.holiday-robotics.com">Holiday Robotics</a>,  where I work on scaling RL in simulation for dexterous humanoid manipulation.</p>
+        <p>
+        <p> 
+        I received my PhD from KAIST, advised by <a href="https://sites.google.com/site/jaegulchoo/">Prof. Jaegul Choo</a>, where my research centered on sample- and compute-efficient deep RL. 
+        This work produced the Simba<a href="https://arxiv.org/abs/2410.09754">1</a>,<a href="https://arxiv.org/abs/2502.15280">2</a> and <a href="https://holiday-robot.github.io/FlashSAC/pdf/arXiv26_flashsac.pdf">FlashSAC</a>, which have since been widely adopted across robotics benchmarks. 
+        <p>  
+          During my PhD, I deployed RL agents across robotics and games at Meta Reality Labs, Sony AI, Krafton, Kakao, and Neowiz, and founded <a href="https://github.com/DAVIAN-Robotics">Davian Robotics</a>, an interdisciplinary research group focusing on physical AI.
+        </p>
+        <p>  
+          If you're interested in building the best humanoids in Korea, feel free to reach out.
+        </p>
+
+        <p style="text-align:center">
+          <a href="mailto:joonleesky@kaist.ac.kr">Email</a> &nbsp/&nbsp
+          <a href="data/hojoonlee202604cv.pdf">CV</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?user=g0R5CDMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/hojoon-lee-6872a4222/">LinkedIn</a> &nbsp/&nbsp
+          <a href="https://x.com/hojoon_ai">Twitter</a> &nbsp/&nbsp
+          <a href="https://github.com/joonleesky/">Github</a>
+        </p>
+
+      </div>
+      <div class="col-xs-12 col-sm-4 personal-column" style="margin-top: 10px">
+        <img alt="profile photo" src="pictures/profile_holiday.jpeg" class="personal-photo">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row section-heading-rows">
+      <h5>Publications</h5>
+    </div>
+    <div class="publication-filter" style="margin-top:-1%">
+      <a href="javascript:void(0)" class="filter-btn active" data-filter="selected">Selected</a> /
+      <a href="javascript:void(0)" class="filter-btn" data-filter="all">All</a>
+    </div>
+
+      <div class="row common-rows selected-publication" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2026flashsac.gif" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2026flashsac" style="margin-top: 0.0%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#fcdf8e">Robotics</span>
+        -->
+        <br>
+        <papertitle>
+        FlashSAC: Fast and Stable Off-Policy RL for High-Dimensional Robot Control
+        </papertitle>
+        <br>
+        <a href="https://i-am-proto.github.io/">Donghu Kim*</a>,
+        <a href="https://leeyngdo.github.io/">Youngdo Lee*</a>,
+        <a href="https://pmh9960.github.io/">Minho Park</a>,
+        <a href="https://kinam0252.github.io/">Kinam Kim</a>,
+        <a href="https://takuseno.github.io/">Takuma Seno</a>,<br>
+        <a href="https://anahrendra.github.io/">I Made Aswin Nahrendra</a>,
+        <a href="https://seiing.github.io/">Sehee Min</a>,
+        <a href="https://www.linkedin.com/in/danielpalenicek/">Daniel Palenicek</a>,
+        <a href="https://scholar.google.com/citations?user=PvEf33EAAAAJ">Florian Vogt</a>, <br>
+        <a href="https://www.csc.kth.se/~dani/">Danica Kragic</a>,
+        <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Jan Peters</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo<sup>†</sup></a>,
+        <strong>Hojoon Lee<sup>†</sup></strong>.
+        <br>
+        <em>Preprint</em>.
+        <br>
+        <a href="https://holiday-robot.github.io/FlashSAC/">project page</a> /
+        <a href="https://holiday-robot.github.io/FlashSAC/pdf/arXiv26_flashsac.pdf">arXiv</a> /
+        <a href="https://github.com/Holiday-Robot/FlashSAC">code</a>      
+        <br><br>
+      </div>
+    </div>
+
+
+      <div class="row common-rows publication-entry" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2026hamster.gif" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2026hamster" style="margin-top: -0.5%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#fcdf8e">Robotics</span>
+        -->
+        <br>
+        <papertitle>
+        3D HAMSTER: Hierarchical VLAs through 3D Trajectory Guidance
+        </papertitle>
+        <br>
+        <a href="https://godnpeter.github.io/">Dongyoon Hwang*</a>,
+        <a href="https://lee15253.github.io">Byungkun Lee*</a>,
+        <a href="https://k00dj-19.github.io/">Dongjin Kim</a>,
+        <a href="https://github.com/Whit3Snow">Hyojin Jang</a>,
+        <a href="https://myyzzzoooo.github.io/">Hoiyeong Jin</a>,
+        <a href="https://moon1x21.github.io/">Jueun Mun</a>,
+        <a href="https://pmh9960.github.io/">Minho Park</a>,
+        <strong>Hojoon Lee</strong>,
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo</a>.
+        <br>
+        <em>Preprint</em>.
+        <br>
+        <a>Coming Soon</a>
+        <br><br>
+      </div>
+    </div>
+
+      <div class="row common-rows publication-entry" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2025rda.gif" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2025rda" style="margin-top: 0%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#fcdf8e">Robotics</span>
+        -->
+        <br>
+        <papertitle>
+        RDA: Reward Design Agent for Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee</strong>,
+        <a href="https://ajaysubramanian.com/">Ajay Subramanian</a>.
+        <a href="https://babbatem.github.io/">Ben Abbatematteo</a>,
+        <a href="https://pmatias.xyz/">Pedro Matias</a>,
+        <a href="https://vijayvee.github.io/">Vijay Veerabadran</a>, <br>
+        <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a>,
+        <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>
+        <br>
+        <em>Preprint</em>.
+        <br>
+        <a>Coming Soon</a>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 2%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2025phuma.gif" alt="preprint2025phuma" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%"">
+        <br>
+        <papertitle>
+            PHUMA: Physically-Grounded Humanoid Locomotion Dataset
+        </papertitle>
+        <br>
+        <a href="https://kyungminn.github.io/">Kyungmin Lee</a>,
+        <a href="https://sibisibi.github.io/">Sibeen Kim</a>,
+        <a href="https://pmh9960.github.io/">Minho Park</a>,
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>, <br>
+        <strong>Hojoon Lee<sup>†</sup></strong>,
+        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo<sup>†</sup></a>.
+        <br>
+        <em>Preprint</em>.
+        <br>
+        <a href="https://davian-robotics.github.io/PHUMA/">project page</a> /
+        <a href="https://arxiv.org/abs/2510.26236">arXiv</a> /
+        <a href="https://github.com/davian-robotics/PHUMA">code</a>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2025acg.gif" alt="preprint2025acg" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: -0.5%">
+        <br>
+        <papertitle>
+            ACG: Action Coherence Guidance for Flow-based VLA models
+        </papertitle>
+        <br>
+        <a href="https://pmh9960.github.io/">Minho Park*</a>,
+        <a href="https://kinam0252.github.io/">Kinam Kim*</a>,
+        <a href="https://junhahyung.github.io/">Junha Hyung</a>,
+        <a href="https://github.com/Whit3Snow">Hyojin Jang</a>,
+        <a href="https://myyzzzoooo.github.io/">Hoiyeong Jin</a>,
+        <a href="https://yeolj00.github.io/">Jooyeol Yun</a>, <br>
+        <strong>Hojoon Lee<sup>†</sup></strong>,
+        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo<sup>†</sup></a>.
+        <br>
+        <em>ICRA'26</em>.
+        <br>
+        <a href="https://davian-robotics.github.io/ACG/">project page</a> /
+        <a href="https://arxiv.org/abs/2510.22201">arXiv</a> /
+        <a href="https://github.com/davian-robotics/ACG?tab=readme-ov-file">code</a>        
+        <br><br>
+      </div>
+    </div>
+
+        <div class="row common-rows selected-publication" style="margin-top: 4%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2025fire.png"class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%"">
+        <br>
+        <papertitle>
+        FIRE: Frobenius-Isometry Reinitialization for Balancing Stability-Plasticity Tradeoff
+        </papertitle>
+        <br>
+        <a href="https://scholar.google.com/citations?user=ralPRksAAAAJ&hl=ko">Isaac Han</a>.
+        Sangyeon Park,
+        Seungwon Oh,
+        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+        <strong>Hojoon Lee<sup>†</sup></strong>,
+        <a href="https://cilab.gist.ac.kr/hp/">Kyungjoon Kim<sup>†</sup></a>.
+        <br>
+        <em>ICLR'26, <span style="color:#df340e">Oral</span></em>
+        <br>
+        <a href="https://arxiv.org/abs/2602.08040">arXiv</a>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row common-rows selected-publication" style="margin-top: 2%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/thesis.png" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#fcdf8e">Robotics</span>
+        -->
+        <br>
+        <papertitle>
+        Maintaining Plasticity for Scalable Deep Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee</strong><br>
+        Commitee: 
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
+        <a href="https://chulheeyun.github.io/">Chulhee Yun</a>,
+        <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>,
+        <a href="https://clarelyle.com/">Clare Lyle</a>,
+        <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>.
+        <br>
+        <em>Thesis</em>.
+        <br>
+        <a href="https://drive.google.com/file/d/1bNe4i3THDjlXJGIwrbn2ahzffxynEDrr/view?usp=sharing">slide</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            Introduce champion-level vision-based RL agent in GranTurismo 7!
+        </p>
+        -->
+      </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 1%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2025gt.gif" alt="neurips2024dodont" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#fcdf8e">Robotics</span>
+        -->
+        <br>
+        <papertitle>
+        A Champion‑level Vision‑based RL Agent for Competitive Racing in Gran Turismo 7 
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee*</strong>,
+        <a href="https://takuseno.github.io/">Takuma Seno*</a>.
+        <a href="https://taijunjet.com">Jun Jet Tai*</a>,
+        <a href="https://kausubbu.github.io">Kaushik Subramanian</a>,
+        Kenta Kawamoto,
+        <a href="https://www.pwurman.org">Peter R. Wurman</a>,
+        <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+        <br>
+        <em>IEEE RA-L & ICRA'26</em>.
+        <br>
+        <a href="data/preprint2025visiongt.pdf">arXiv</a> /
+        <a href="https://www.youtube.com/watch?v=a-GuIbQOw_c">video</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            Introduce champion-level vision-based RL agent in GranTurismo 7!
+        </p>
+        -->
+      </div>
+    </div>
+
+    <div class="row common-rows selected-publication" style="margin-top: 2%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/simbav2.png" alt="preprint2025simbav2" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: -1%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        -->
+        <br>
+        <papertitle>
+        SimbaV2: Hyperspherical Normalization for Scalable Deep Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee*</strong>,
+        <a href="https://leeyngdo.github.io/">Youngdo Lee*</a>.
+        <a href="https://takuseno.github.io/">Takuma Seno</a>.
+        <a href="https://i-am-proto.github.io">Donghu Kim</a>,
+        <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo</a>.
+        <br>
+        <em>ICML'25, <span style="color:#df770e">Spotlight</span></em>
+        <br>
+        <a href="https://dojeon-ai.github.io/SimbaV2/">project page</a> /
+        <a href="https://arxiv.org/abs/2502.15280">arXiv</a> /
+        <a href="https://github.com/dojeon-ai/SimbaV2">code</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            Designed network architectures with hyperspherical normalization which allows scaling up computation and parameters in RL.
+        </p>
+        -->
+      </div>
+    </div>
+
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/simba.gif" alt="iclr2025simba" class="cropped-gif">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top:1.5%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        -->
+        <br>
+        <papertitle>
+        SimBa: Simplicity Bias for Scaling Up Parameters in Deep Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee*</strong>,
+        <a href="https://godnpeter.github.io">Dongyoon Hwang*</a>,
+        <a href="https://i-am-proto.github.io">Donghu Kim</a>,
+        <a href="https://mynsng.github.io">Hyunseung Kim</a>,
+        <a href="https://taijunjet.com">Jun Jet Tai</a>,
+        <a href="https://kausubbu.github.io">Kaushik Subramanian</a>,
+        <a href="https://www.pwurman.org">Peter R. Wurman</a>,
+        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo</a>,
+        <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+        <a href="https://takuseno.github.io/">Takuma Seno</a>.
+        <br>
+        <em>ICLR'25, <span style="color:#df770e">Spotlight</span></em>
+        <br>
+        <a href="https://sonyresearch.github.io/simba/">project page</a> /
+        <a href="https://arxiv.org/abs/2410.09754">arXiv</a> /
+        <a href="https://github.com/SonyResearch/simba">code</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            Designed network architectures that steer convergence toward simple functions which allows to scale up parameters in RL.
+        </p>
+        -->
+      </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 1.8%">
+          <img src="pictures/preprint2024dodont.png" alt="neurips2024dodont" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#ff9aa2">Skill Discovery</span>
+        -->
+        <br>
+        <papertitle>
+            Do's and Don'ts:Learning Desirable Skills with Instruction Videos
+        </papertitle>
+        <br>
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://lee15253.github.io">Byungkun Lee</a>,
+        <strong>Hojoon Lee</strong>,
+        <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
+        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
+        <br>
+        <em>NeurIPS'24</em>.
+        <br>
+        <a href="https://mynsng.github.io/dodont/">project page</a> /
+        <a href="https://arxiv.org/abs/2406.00324v1">arXiv</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            We present DoDont, a skill discovery algorithm that learns diverse behaviors 
+            while following the behaviors in "do" videos while avoiding the behaviors in "don't" videos.
+        </p>
+        -->
+        </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/icml2024hnt.png" alt="icml2024hnt" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#b5ead7">Plasticity</span>
+        -->
+        <br>
+        <papertitle>
+        Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee</strong>,
+        Hyeonseo Cho,
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+        Dugki Min,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
+        <a href="https://clarelyle.com/">Clare Lyle</a>.
+        <br>
+        <em>ICML'24</em>.
+        <br>
+        <a href="https://arxiv.org/abs/2406.02596">arXiv</a> /
+        <a href="https://icml.cc/media/PosterPDFs/ICML%202024/33921.png">poster</a> /
+        <a href="data/icml2024hnt.txt">Bibtex</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            To allow the network to continually adapt and generalize, we introduce Hare and Tortoise architecture, 
+            inspired by the complementary learning system of the human brain.
+        </p>
+        -->
+        </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/icml2024atari-pb.png" alt="icml2024atari-pb" class="paper-images">
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+          <!--
+          <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+          <span style="background-color:#ffdac1">Pre-training</span>
+          -->
+          <br>
+            <papertitle>
+              ATARI-PB: Investigating Pre-Training Objectives for Generalization in Vision-Based RL
+            </papertitle>
+          <br>
+          <a href="https://i-am-proto.github.io/">Donghu Kim*</a>,
+          <strong>Hojoon Lee*</strong>,
+          <a href="https://kyungminn.github.io/">Kyungmin Lee*</a>,
+          <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
+          <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+          <br>
+          <em>ICML'24</em>.
+          <br>
+          <a href="https://i-am-proto.github.io/atari-pb/">project page</a> /
+          <a href="https://arxiv.org/abs/2406.06037">arXiv</a> /
+          <a href="https://icml.cc/media/PosterPDFs/ICML%202024/34150.png">poster</a> /
+          <a href="data/icml2024ataripb.txt">Bibtex</a>
+          <br><br>
+          <!--
+          <p style="margin-top: -1%;"> 
+            We investigate which pre-training objectives are beneficial for in-distribution, near-out-of-distribution, and far-out-of-distribution generalization in visual reinforcement learning.
+          </p>
+          -->
+        </div>
+      </div>
+    
+    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 2.1%">
+        <img src="pictures/icml2024coin.png" alt="icml2024coin" class="paper-images">
+    </div>
+    <div class="col-xs-12 col-sm-9 right-column">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#f1f1b2">Adaptation</span>
+        -->
+        <br>
+        <papertitle>
+            Adapting Pretrained ViTs with Convolution Injector for Visuo-Motor Control
+        </papertitle>
+        <br>
+        <a href="https://godnpeter.github.io/">Dongyoon Hwang*</a>,
+        <a href="https://lee15253.github.io">Byungkun Lee*</a>,
+        <strong>Hojoon Lee</strong>,
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+        <br>
+        <em>ICML'24</em>.
+        <br>
+        <a href="https://godnpeter.github.io/CoIn/">project page</a> /
+        <a href="https://arxiv.org/abs/2406.06037">arXiv</a> /
+        <a href="data/icml2024coin.txt">Bibtex</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            Introducing an add-on convolution module for pre-trained ViT models, 
+            enhancing adaptability for vision-based motor control with injecting locality and translation equivariant biases.
+        </p>
+        -->
+    </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 1.5%">
+        <img src="pictures/neurips2023plastic.png" alt="neurips2023plastic" class="paper-images" style="width:92%">
+    </div>
+    <div class="col-xs-12 col-sm-9 right-column">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#b5ead7">Plasticity</span>
+        -->
+        <br>
+        <papertitle>
+            PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee*</strong>, 
+        <a href="https://hanseuljo.github.io">Hanseul Cho*</a>, 
+        <a href="https://mynsng.github.io/">Hyunseung Kim*</a>, 
+        Daehoon Gwak, 
+        Joonkee Kim, 
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
+        <a href="https://fbsqkd.github.io/">Se-Young Yun</a>,
+        <a href="https://chulheeyun.github.io/">Chulhee Yun</a>.
+        <br>
+        <em>NeurIPS'23</em>.
+        <br>
+        <a href="https://arxiv.org/abs/2306.10711">arXiv</a> /
+        <a href="https://github.com/dojeon-ai/plastic">code</a> /
+        <a href="https://drive.google.com/file/d/1-QeWhom9l7mUt3m7zJV-_DIGMtL7F2Cq/view?usp=sharing">slide</a> /
+        <a href="https://drive.google.com/file/d/1-OTP_-rw2x-csjsJ9jH7utuHw9zDxsJc/view?usp=sharing">poster</a> /
+        <a href="data/neurips2023plastic.txt">Bibtex</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+            For sample-efficient RL, the agent needs to quickly adapt to various inputs (input plasticity) and outputs (label plasticity). 
+            We present PLASTIC, which maintains both input and label plasticity by identifying smooth local minima and preserving gradient flow. 
+        </p>
+        -->
+    </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 2.5%">
+    <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/neurips2023disco-dance4.png" alt="neurips2023disco-dance" class="paper-images" style="width:80%; margin-left:12.5%; margin-top: 1%">
+    </div>
+    <div class="col-xs-12 col-sm-9 right-column">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#ff9aa2">Skill Discovery</span>
+        -->
+        <br>
+        <papertitle>
+            DISCO-DANCE: Learning to Discover Skills through Guidance
+        </papertitle>
+        <br>
+        <a href="https://mynsng.github.io/">Hyunseung Kim*</a>, 
+        Byungkun Lee*,
+        <strong>Hojoon Lee</strong>, 
+        Dongyoon Hwang,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+        <br>
+        <em>NeurIPS'23</em>.
+        <br>
+        <a href="https://mynsng.github.io/discodance/">project page</a> /
+        <a href="https://arxiv.org/abs/2310.20178">arXiv</a> /
+        <a href="https://github.com/dojeon-ai/discodance">code</a> /
+        <a href="data/neurips2023disco-dance.txt">Bibtex</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+        We introduce DISCO-DANCE, a Skill Discovery algorithm focused on learning diverse, task-agnostic behaviors. 
+        DISCO-DANCE addresses the common limitation of exploration in skill discovery algorithms through explicit guidance.
+        </p>
+        -->
+    </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 4%">
+    <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/icml2023simtpr.png" alt="icml2023simtpr" class="paper-images" style="margin-left:13%; width:85%">
+    </div>
+    <div class="col-xs-12 col-sm-9 right-column" style="margin-top:-1.5%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#ffdac1">Pre-training</span>
+        -->
+        <br>
+        <papertitle>
+            SimTPR: On the Importance of Feature Decorrelation for Unsupervised Representation Learning for Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee</strong>,
+        Koanho Lee, 
+        Dongyoon Hwang, 
+        Hyunho Lee, 
+        Byungkun Lee, 
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+        <br>
+        <em>ICML'23</em>.
+        <br>
+        <a href="https://arxiv.org/abs/2306.05637">arXiv</a> /
+        <a href="https://github.com/dojeon-ai/SimTPR">code</a> /
+        <a href="https://drive.google.com/file/d/1FPJHtd3uY54P2iOoPBrnt8jD-ud6nF6G/view?usp=sharing">poster</a> /
+        <a href="data/icml2023simtpr.txt">Bibtex</a>
+        <br><br>
+        <!--
+        <p style="margin-top: -1%;"> 
+        We present a visual pre-training algorithm grounded in self-predictive learning principles tailored for reinforcement learning.
+        </p>
+        -->
+    </div>
+    </div>
+
+    <!--
+    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="col-xs-12 custom-col-sm-3 left-column">
+        <img src="pictures/cikm2023strap.png" alt="cikm2023strap" class="paper-images" style="width: 90%">
+    </div>
+    <div class="col-xs-12 col-sm-9 right-column">
+        <span style="background-color:#C9D3D8">Data Mining</span>
+        <br>
+        <papertitle>
+            ST-RAP: A Spatio-Temporal Framework for Real Estate Appraisal 
+        </papertitle>
+        <br>
+        <strong>Hojoon Lee*</strong>,
+        Hawon Jung*,
+        Byungkun Lee*, 
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+        <br>
+        <em>CIKM'23 (short)</em>.
+        <br>
+        <a href="https://arxiv.org/abs/2308.10609v1">arXiv</a> /
+        <a href="https://github.com/dojeon-ai/STRAP">code</a> /
+        <a href="https://drive.google.com/file/d/1ht5I6-PQmzlVzF-1YQCkBO1XcrVGbjk7/view?usp=sharing">poster</a> /
+        <a href="data/cikm2023strap.txt">Bibtex</a>
+        <br><br>
+        <p style="margin-top: -1%;"> 
+        We construct a real estate appraisal framework that integrates spatial and temporal aspects, 
+        validated using a dataset of 3.6M real estate transactions in South Korea from 2016 to 2020.          
+        </p>
+    </div>
+    </div>
+    -->
+
+    <div class="row common-rows publication-entry" style="margin-top: 4%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/sigir2022irs.png" alt="sigir2022irs" class="paper-images" style="margin-left:5%">
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column" style="margin-top: -0.5%">
+            <!--
+            <span style="background-color:#C9D3D8">Data Mining</span>
+            <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+            -->
+            <br>
+            <papertitle>
+                Towards Validating Long-Term User Feedbacks in Interactive Recommender System
+            </papertitle>
+            <br>
+            <strong>Hojoon Lee</strong>,
+            Dongyoon Hwang,
+            Kyushik Min,
+            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+            <br>
+            <em>SIGIR'22 (short), <span style="color:#df340e">Honorable Mention</span></em>
+            <br>
+            <a href="https://dl.acm.org/doi/abs/10.1145/3477495.3531869">arXiv</a> /
+            <a href="https://drive.google.com/file/d/13PEGDMrfZaG-PcCp0tx-A_L_2E1MKqQm/view?usp=sharing">poster</a> /
+            <a href="data/sigir2022irs.txt">Bibtex</a>
+            <br><br>
+            <!--
+            <p style="margin-top: -1%;">              
+                Through validating the long-term impact of user feedback in MovieLens and Amazon Review datasets, 
+                we've discovered that these datasets are inadequate for evaluating reinforcement learning-based interactive recommender systems.        
+            </p>
+            -->
+        </div>
+    </div>
+
+
+    <div class="row common-rows publication-entry" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/www2022draftrec.png" alt="www2022draftrec" class="paper-images" style="margin-left:12.5%; width:85%">
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+            <!--
+            <span style="background-color:#C9D3D8">Data Mining</span>
+            <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+            <span style="background-color:#c9d2fe">Game</span>
+            -->
+            <br>
+            <papertitle>
+                DraftRec: Personalized Draft Recommendation for Winning in MOBA Games
+            </papertitle>
+            <br>
+            <strong>Hojoon Lee*</strong>,
+            Dongyoon Hwang*,
+            <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+            Byungkun Lee, 
+            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+            <br>
+            <em>WWW'22</em>.
+            <br>
+            <a href="https://arxiv.org/abs/2204.12750">arXiv</a> /
+            <a href="https://github.com/dojeon-ai/DraftRec">code</a> /
+            <a href="https://drive.google.com/file/d/15L2ZqVutI3xjwJXq9NGbizSZbNsQEXOK/view?usp=sharing">poster</a> /
+            <a href="data/www2022draftrec.txt">Bibtex</a>
+            <br><br>
+            <!--
+            <p style="margin-top: -1%;">                         
+                We gathered data from 280,000 matches played by the top 0.3% rank players in Korea for League of Legends. 
+                From this, we developed DraftRec, a personalized champion recommendation system aimed at maximizing players' win rates.   
+            </p>
+            -->
+        </div>
+    </div>
+
+    <!--
+    <div class="row common-rows publication-entry" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/cog2022gunshot.png" alt="cog2022gunshot" class="paper-images" style="margin-left:3%;">
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+            <span style="background-color:#C9D3D8">Data Mining</span>
+            <span style="background-color:#c9d2fe">Game</span>
+            <br>
+            <papertitle>
+                Enemy Spotted: In-game Gun Sound Dataset for Gunshot Classification and Localization
+            </papertitle>
+            <br>
+            Junwoo Park, 
+            Youngwoo Cho, 
+            Gyuhyeon Sim, 
+            <strong>Hojoon Lee</strong>,
+            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+            <br>
+            <em>COG'22</em>.
+            <br>
+            <a href="https://arxiv.org/abs/2210.05917">arXiv</a> /
+            <a href="data/cog2022gunshot.txt">Bibtex</a>
+            <br><br>
+            <p style="margin-top: -1%;">                         
+                We collected a gunshot sound dataset from PlayerUnknown's Battlegrounds (PUBG). 
+                Using this data, we developed a gunshot localization model that can be applied to real-world scenarios.
+            </p>
+        </div>
+    </div>
+    -->
+  <br>
+
+  <div class="container">
+    <div class="row section-heading-rows" style="margin-left:-2%; margin-top:2%">
+      <h5 style="z-index: 2;">Work Experience</h5>
+    </div>
+
+    <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
+        <div class="col-xs-12 col-sm-3 left-column">
+            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+                <img src="pictures/ci_holiday.svg" alt="Sony AI Logo" style="max-width: 75%; max-height: 75%; object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <strong>Holiday Robotics</strong>
+            <span style="white-space: nowrap;">Jan 2026 - Present</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              Senior Research Scientist
+              <span style="white-space: nowrap;">Seoul, Korea</span>
+          </div>
+          <ul style="margin-left:-1.5em; margin-top:0.5em;">
+          <li>Dexterous Manipulation with RL</li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="row common-rows" style="margin-top:-5%; margin-left:-3.5%">
+        <div class="col-xs-12 col-sm-3 left-column">
+            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+                <img src="pictures/ci_meta.svg" alt="Sony AI Logo" style="max-width: 75%; max-height: 75%; object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <strong>Meta Reality Labs</strong>
+            <span style="white-space: nowrap;">May 2025 - Nov 2025</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              Research Intern
+              <span style="white-space: nowrap;">Seattle, USA</span>
+          </div>
+          <ul style="margin-left:-1.5em; margin-top:0.5em;">
+          <li>Dexterous Manipulation with RL</li>
+          <li>Mentor: <a href="https://babbatem.github.io/">Ben Abbatematteo</a>, <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>. <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
+        <div class="col-xs-12 col-sm-3 left-column">
+            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+                <img src="pictures/ci_krafton.png" alt="Krafton Logo" style="max-width: 75%; max-height: 75%; object-fit: contain;">
+          </div>
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <strong>Krafton AI</strong>
+          <span style="white-space: nowrap;">Feb 2025 - May 2025</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            Research Intern
+            <span style="white-space: nowrap;">Seoul, Korea</span>
+        </div>
+        <ul style="margin-left:-1.5em; margin-top:0.5em;">
+        <li>Chess Agent with RLVR: <a href="https://arxiv.org/abs/2507.00726">arXiv</a></li>
+        <li>Mentor: <a href="https://jerryjonghopark.github.io/">Jongho Park</a>, <a href="https://dongmean.github.io/">Dongmin Park</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
+        <div class="col-xs-12 col-sm-3 left-column">
+            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+                <img src="pictures/ci_sony_ai.png" alt="Sony AI Logo" style="max-width: 95%; max-height: 95%; object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <strong>Sony AI</strong>
+            <span style="white-space: nowrap;">Feb 2024 - Aug 2024</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              Research Intern
+              <span style="white-space: nowrap;">Tokyo, Japan</span>
+          </div>
+          <ul style="margin-left:-1.5em; margin-top:0.5em;">
+          <li>Vision-based Racing agent in Gran Turismo 7 with RL: <a href="https://arxiv.org/abs/2504.09021">arXiv</a></li>
+          <li>Mentor: <a href="#">Takuma Seno</a>, <a href="#">Kaushik Subramanian</a>, <a href="#">Peter Stone</a>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
+        <div class="col-xs-12 col-sm-3 left-column">
+            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+                <img src="pictures/ci_kakao.png" alt="Neowiz Logo" style="max-width: 60%; max-height: 60%; object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <strong>Kakao Enterprise</strong>
+            <span style="white-space: nowrap;">Sep 2021 - Nov 2021</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              Research Intern
+              <span style="white-space: nowrap;">Pangyo, Korea</span>
+          </div>
+          <ul style="margin-left:-1.5em; margin-top:0.5em;">
+          <li>Built an open‑source RL framework, <a href="https://github.com/kakaoenterprise/JORLDY">Jorldy</a> (300+★).</li>
+          <li>Mentor: <a href="https://scholar.google.co.kr/citations?user=dz8VK3IAAAAJ&hl=ko">Kyushik Min</a>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
+        <div class="col-xs-12 col-sm-3 left-column">
+          <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
+            <img src="pictures/ci_neowiz.svg" alt="Neowiz Logo" style="max-width: 55%; max-height: 55%; object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 right-column">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <strong>Neowiz</strong>
+            <span style="white-space: nowrap;">Mar 2019 - Jun 2019</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              Research Intern
+              <span style="white-space: nowrap;">Pangyo, Korea</span>
+          </div>
+          <ul style="margin-left:-1.5em; margin-top:0.5em;">
+          <li>Turn-Based Game Agent for <a href="https://play.google.com/store/apps/details?id=com.neowizgames.game.browndust.srpg.global&hl=en&pli=1">Brave Nine</a>: <a href="data/korea2019browndust.pdf">Poster</a></li>
+          <li>Mentor: Jaejin Yoon</li>
+        </ul>
+        </div>
+      </div>
+  </div>
+  <br>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p style="text-align:right;font-size:small;">
+          Template based on <a href="https://jonbarron.info/">Jon Barron's website</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const publications = document.querySelectorAll('.publication-entry');
+        
+        // Function to apply filtering
+        function applyFilter(filterValue) {
+          // Remove active class from all buttons
+          filterBtns.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to the button with matching data-filter
+          const activeBtn = document.querySelector(`.filter-btn[data-filter="${filterValue}"]`);
+          if (activeBtn) {
+            activeBtn.classList.add('active');
+          }
+          
+          // Show/hide publications based on filter
+          if (filterValue === 'selected') {
+            publications.forEach(pub => {
+              if (pub.classList.contains('selected-publication')) {
+                pub.classList.remove('hidden');
+              } else {
+                pub.classList.add('hidden');
+              }
+            });
+          } else if (filterValue === 'all') {
+            publications.forEach(pub => pub.classList.remove('hidden'));
+          }
+        }
+        
+        // Add click event listeners to filter buttons
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            applyFilter(filter);
+          });
+        });
+        
+        // Apply the "selected" filter by default on page load
+        applyFilter('selected');
+      });
+  </script>
+</body>

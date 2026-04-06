@@ -1,0 +1,6 @@
+@article{kim2024investigating,
+  title={Investigating Pre-Training Objectives for Generalization in Vision-Based Reinforcement Learning},
+  author={Kim, Donghu and Lee, Hojoon and Lee, Kyungmin and Hwang, Dongyoon and Choo, Jaegul},
+  journal={arXiv preprint arXiv:2406.06037},
+  year={2024}
+}

@@ -1,0 +1,7 @@
+@article{lee2024plastic,
+  title={Plastic: Improving input and label plasticity for sample efficient reinforcement learning},
+  author={Lee, Hojoon and Cho, Hanseul and Kim, Hyunseung and Gwak, Daehoon and Kim, Joonkee and Choo, Jaegul and Yun, Se-Young and Yun, Chulhee},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}

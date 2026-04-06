@@ -1,0 +1,8 @@
+@inproceedings{lee2023importance,
+  title={On the importance of feature decorrelation for unsupervised representation learning in reinforcement learning},
+  author={Lee, Hojoon and Lee, Koanho and Hwang, Dongyoon and Lee, Hyunho and Lee, Byungkun and Choo, Jaegul},
+  booktitle={International Conference on Machine Learning},
+  pages={18988--19009},
+  year={2023},
+  organization={PMLR}
+}

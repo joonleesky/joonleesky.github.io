@@ -1,0 +1,7 @@
+@article{kim2024learning,
+  title={Learning to discover skills through guidance},
+  author={Kim, Hyunseung and LEE, BYUNG KUN and Lee, Hojoon and Hwang, Dongyoon and Park, Sejik and Min, Kyushik and Choo, Jaegul},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}

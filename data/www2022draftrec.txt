@@ -1,0 +1,7 @@
+@inproceedings{lee2022draftrec,
+  title={Draftrec: personalized draft recommendation for winning in multi-player online battle arena games},
+  author={Lee, Hojoon and Hwang, Dongyoon and Kim, Hyunseung and Lee, Byungkun and Choo, Jaegul},
+  booktitle={Proceedings of the ACM Web Conference 2022},
+  pages={3428--3439},
+  year={2022}
+}
