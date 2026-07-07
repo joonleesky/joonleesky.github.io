@@ -26,51 +26,6 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="pictures/personal_round.png">
 
-  <style>
-    .publication-filter {
-      display: block;
-      margin-left: 0;
-      margin-top: 5px;
-    }
-    .filter-btn {
-      background: none;
-      border: none;
-      color: #1772d0;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 16px;
-      padding: 0 5px;
-      font-family: inherit;
-    }
-    .filter-btn:hover {
-      text-decoration: none;
-      color: orange;
-    }
-    .filter-btn.active {
-      color: #1772d0;
-      font-weight: bold;
-    }
-    .publication-entry {
-      transition: opacity 0.3s ease, height 0.3s ease;
-    }
-    .publication-entry.hidden {
-      display: none;
-    }
-    /* Style for the Simba GIF to crop the top */
-    .paper-images {
-      width: 100%;
-      height: auto;
-    }
-    .cropped-gif {
-      width: 100%;
-      clip-path: inset(20% 0 20% 0);
-    }
-    .spotlight {
-        color: orange;
-        font-weight: bold;
-      }
-  </style>
-
 </head>
 
 <body>
@@ -88,13 +43,16 @@
 
       <div class="col-xs-12 col-sm-8 personal-column">
         <p> 
-        Hello! I'm Hojoon Lee, a Senior Research Scientist at <a href="https://www.holiday-robotics.com">Holiday Robotics</a>,  where I work on scaling RL in simulation for dexterous humanoid manipulation.</p>
+        Hello! I’m Hojoon Lee, a Senior Research Scientist at <a href="https://www.holiday-robotics.com">Holiday Robotics</a>, where I work on physical AI for dexterous humanoid manipulation.
         <p>
         <p> 
-        I received my PhD from KAIST, advised by <a href="https://sites.google.com/site/jaegulchoo/">Prof. Jaegul Choo</a>, where my research centered on sample- and compute-efficient deep RL. 
-        This work produced the Simba<a href="https://arxiv.org/abs/2410.09754">1</a>,<a href="https://arxiv.org/abs/2502.15280">2</a> and <a href="https://holiday-robot.github.io/FlashSAC/pdf/arXiv26_flashsac.pdf">FlashSAC</a>, which have since been widely adopted across robotics benchmarks. 
+        I received my PhD from KAIST, advised by <a href="https://sites.google.com/site/jaegulchoo/">Prof. Jaegul Choo</a>.
+        During my PhD, I focused on sample- and compute-efficient deep reinforcement learning, which includes Simba series:<a href="https://arxiv.org/abs/2410.09754">1</a>,<a href="https://arxiv.org/abs/2502.15280">2</a> and <a href="https://holiday-robot.github.io/FlashSAC/pdf/arXiv26_flashsac.pdf">FlashSAC</a>. 
         <p>  
-          During my PhD, I deployed RL agents across robotics and games at Meta Reality Labs, Sony AI, Krafton, Kakao, and Neowiz, and founded <a href="https://github.com/DAVIAN-Robotics">Davian Robotics</a>, an interdisciplinary research group focusing on physical AI.
+        Beyond my academic work, I have applied reinforcement learning to robotics and games, including dexterous manipulation at Meta Reality Labs, vision-based racing agents in Gran Turismo at Sony AI, chess-playing language models at Krafton, recommender systems at Kakao, and game agents for Browndust at Neowiz.
+        </p>
+        <p>
+        During this time, I founded <a href="https://github.com/DAVIAN-Robotics">Davian Robotics</a>, a student-led physical AI research group built on a collaborative, interdisciplinary, hands-on culture.
         </p>
         <p>  
           If you're interested in building the best humanoids in Korea, feel free to reach out.
@@ -102,7 +60,7 @@
 
         <p style="text-align:center">
           <a href="mailto:joonleesky@kaist.ac.kr">Email</a> &nbsp/&nbsp
-          <a href="data/hojoonlee202604cv.pdf">CV</a> &nbsp/&nbsp
+          <a href="data/hojoonlee202607cv.pdf">CV</a> &nbsp/&nbsp
           <a href="https://scholar.google.com/citations?user=g0R5CDMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
           <a href="https://www.linkedin.com/in/hojoon-lee-6872a4222/">LinkedIn</a> &nbsp/&nbsp
           <a href="https://x.com/hojoon_ai">Twitter</a> &nbsp/&nbsp
@@ -125,49 +83,38 @@
       <a href="javascript:void(0)" class="filter-btn" data-filter="all">All</a>
     </div>
 
-      <div class="row common-rows selected-publication" style="margin-top: 0%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/preprint2026flashsac.gif" class="paper-images">
+            <img src="pictures/preprint2025phuma.gif" alt="preprint2025phuma" class="paper-images">
         </div>
-      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2026flashsac" style="margin-top: 0.0%">
-        <!--
-        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
-        <span style="background-color:#fcdf8e">Robotics</span>
-        -->
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
         <br>
         <papertitle>
-        FlashSAC: Fast and Stable Off-Policy RL for High-Dimensional Robot Control
+            PHUMA: Physically-Grounded Humanoid Locomotion Dataset
         </papertitle>
         <br>
-        <a href="https://i-am-proto.github.io/">Donghu Kim*</a>,
-        <a href="https://leeyngdo.github.io/">Youngdo Lee*</a>,
+        <a href="https://kyungminn.github.io/">Kyungmin Lee</a>,
+        <a href="https://sibisibi.github.io/">Sibeen Kim</a>,
         <a href="https://pmh9960.github.io/">Minho Park</a>,
-        <a href="https://kinam0252.github.io/">Kinam Kim</a>,
-        <a href="https://takuseno.github.io/">Takuma Seno</a>,
-        <a href="https://anahrendra.github.io/">Aswin Nahrendra</a>,
-        <a href="https://seiing.github.io/">Sehee Min</a>,
-        <a href="https://www.linkedin.com/in/danielpalenicek/">Daniel Palenicek</a>,
-        <a href="https://scholar.google.com/citations?user=PvEf33EAAAAJ">Florian Vogt</a>, 
-        <a href="https://www.csc.kth.se/~dani/">Danica Kragic</a>,
-        <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Jan Peters</a>,
-        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo<sup>†</sup></a>,
-        <strong>Hojoon Lee<sup>†</sup></strong>.
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>, 
+        <strong>Hojoon Lee<sup>†</sup></strong>,
+        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo<sup>†</sup></a>.
         <br>
         <em>Preprint</em>.
         <br>
-        <a href="https://holiday-robot.github.io/FlashSAC/">project page</a> /
-        <a href="https://holiday-robot.github.io/FlashSAC/pdf/arXiv26_flashsac.pdf">arXiv</a> /
-        <a href="https://github.com/Holiday-Robot/FlashSAC">code</a>      
+        <a href="https://davian-robotics.github.io/PHUMA/">project page</a> /
+        <a href="https://arxiv.org/abs/2510.26236">arXiv</a> /
+        <a href="https://github.com/davian-robotics/PHUMA">code</a>
         <br><br>
       </div>
     </div>
-
 
       <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/preprint2026hamster.gif" class="paper-images">
         </div>
-      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2026hamster" style="margin-top: -0.5%">
+      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2026hamster" style="margin-top: 0.0%">
         <!--
         <span style="background-color:#e2c7e5">Reinforcement Learning</span>
         <span style="background-color:#fcdf8e">Robotics</span>
@@ -188,9 +135,10 @@
         <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
         <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo</a>.
         <br>
-        <em>Preprint</em>.
+        <em>IROS'26</em>.
         <br>
-        <a>Coming Soon</a>
+        <a href="https://davian-robotics.github.io/3D_HAMSTER/">project page</a> /
+        <a href="https://arxiv.org/abs/2606.31329">arXiv</a>
         <br><br>
       </div>
     </div>
@@ -217,45 +165,56 @@
         <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a>,
         <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>
         <br>
-        <em>Preprint</em>.
+        <em>RLC'26
+        </em>.
         <br>
-        <a>Coming Soon</a>
+        <a href="https://arxiv.org/abs/2606.01672">arXiv</a>
         <br><br>
       </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 2%">
+      <div class="row common-rows selected-publication" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/preprint2025phuma.gif" alt="preprint2025phuma" class="paper-images">
+            <img src="pictures/preprint2026flashsac.gif" class="paper-images">
         </div>
-      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%"">
+      <div class="col-xs-12 col-sm-9 right-column" alt="preprint2026flashsac" style="margin-top: 0%">
+        <!--
+        <span style="background-color:#e2c7e5">Reinforcement Learning</span>
+        <span style="background-color:#fcdf8e">Robotics</span>
+        -->
         <br>
         <papertitle>
-            PHUMA: Physically-Grounded Humanoid Locomotion Dataset
+        FlashSAC: Fast and Stable Off-Policy RL for High-Dimensional Robot Control
         </papertitle>
         <br>
-        <a href="https://kyungminn.github.io/">Kyungmin Lee</a>,
-        <a href="https://sibisibi.github.io/">Sibeen Kim</a>,
+        <a href="https://i-am-proto.github.io/">Donghu Kim*</a>,
+        <a href="https://leeyngdo.github.io/">Youngdo Lee*</a>,
         <a href="https://pmh9960.github.io/">Minho Park</a>,
-        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
-        <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>, 
-        <strong>Hojoon Lee<sup>†</sup></strong>,
-        <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo<sup>†</sup></a>.
+        <a href="https://kinam0252.github.io/">Kinam Kim</a>,
+        <a href="https://takuseno.github.io/">Takuma Seno</a>,
+        <a href="https://anahrendra.github.io/">Aswin Nahrendra</a>,
+        <a href="https://seiing.github.io/">Sehee Min</a>,
+        <a href="https://www.linkedin.com/in/danielpalenicek/">Daniel Palenicek</a>,
+        <a href="https://scholar.google.com/citations?user=PvEf33EAAAAJ">Florian Vogt</a>, 
+        <a href="https://www.csc.kth.se/~dani/">Danica Kragic</a>,
+        <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Jan Peters</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo<sup>†</sup></a>,
+        <strong>Hojoon Lee<sup>†</sup></strong>.
         <br>
-        <em>Preprint</em>.
+        <em>RSS'26</em>.
         <br>
-        <a href="https://davian-robotics.github.io/PHUMA/">project page</a> /
-        <a href="https://arxiv.org/abs/2510.26236">arXiv</a> /
-        <a href="https://github.com/davian-robotics/PHUMA">code</a>
+        <a href="https://holiday-robot.github.io/FlashSAC/">project page</a> /
+        <a href="https://arxiv.org/abs/2606.01672">arXiv</a> /
+        <a href="https://github.com/Holiday-Robot/FlashSAC">code</a>      
         <br><br>
       </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/preprint2025acg.gif" alt="preprint2025acg" class="paper-images">
         </div>
-      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: -0.5%">
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0.0%">
         <br>
         <papertitle>
             ACG: Action Coherence Guidance for Flow-based VLA models
@@ -279,31 +238,7 @@
       </div>
     </div>
 
-        <div class="row common-rows selected-publication" style="margin-top: 4%">
-        <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/preprint2025fire.png"class="paper-images">
-        </div>
-      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%"">
-        <br>
-        <papertitle>
-        FIRE: Frobenius-Isometry Reinitialization for Balancing Stability-Plasticity Tradeoff
-        </papertitle>
-        <br>
-        <a href="https://scholar.google.com/citations?user=ralPRksAAAAJ&hl=ko">Isaac Han</a>.
-        Sangyeon Park,
-        Seungwon Oh,
-        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
-        <strong>Hojoon Lee<sup>†</sup></strong>,
-        <a href="https://cilab.gist.ac.kr/hp/">Kyungjoon Kim<sup>†</sup></a>.
-        <br>
-        <em>ICLR'26, <span style="color:#df340e">Oral</span></em>
-        <br>
-        <a href="https://arxiv.org/abs/2602.08040">arXiv</a>
-        <br><br>
-      </div>
-    </div>
-
-    <div class="row common-rows selected-publication" style="margin-top: 2%">
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/thesis.png" class="paper-images">
         </div>
@@ -337,7 +272,31 @@
       </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 1%">
+      <div class="row common-rows selected-publication" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/preprint2025fire.png" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
+        <br>
+        <papertitle>
+        FIRE: Frobenius-Isometry Reinitialization for Balancing Stability-Plasticity Tradeoff
+        </papertitle>
+        <br>
+        <a href="https://scholar.google.com/citations?user=ralPRksAAAAJ&hl=ko">Isaac Han</a>.
+        Sangyeon Park,
+        Seungwon Oh,
+        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+        <strong>Hojoon Lee<sup>†</sup></strong>,
+        <a href="https://cilab.gist.ac.kr/hp/">Kyungjoon Kim<sup>†</sup></a>.
+        <br>
+        <em>ICLR'26, <span style="color:#df340e">Oral</span></em>
+        <br>
+        <a href="https://arxiv.org/abs/2602.08040">arXiv</a>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/preprint2025gt.gif" alt="neurips2024dodont" class="paper-images">
         </div>
@@ -372,11 +331,11 @@
       </div>
     </div>
 
-    <div class="row common-rows selected-publication" style="margin-top: 2%">
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/simbav2.png" alt="preprint2025simbav2" class="paper-images">
         </div>
-      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: -1%">
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
         <!--
         <span style="background-color:#e2c7e5">Reinforcement Learning</span>
         -->
@@ -410,7 +369,7 @@
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/simba.gif" alt="iclr2025simba" class="cropped-gif">
         </div>
-      <div class="col-xs-12 col-sm-9 right-column" style="margin-top:1.5%">
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top:0%">
         <!--
         <span style="background-color:#e2c7e5">Reinforcement Learning</span>
         -->
@@ -445,7 +404,7 @@
     </div>
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
-        <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 1.8%">
+        <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 0%">
           <img src="pictures/preprint2024dodont.png" alt="neurips2024dodont" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
@@ -516,7 +475,7 @@
         </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/icml2024atari-pb.png" alt="icml2024atari-pb" class="paper-images">
         </div>
@@ -551,8 +510,8 @@
         </div>
       </div>
     
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
-    <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 2.1%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
+    <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 0%">
         <img src="pictures/icml2024coin.png" alt="icml2024coin" class="paper-images">
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
@@ -587,7 +546,7 @@
     </div>
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
-        <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 1.5%">
+        <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 0%">
         <img src="pictures/neurips2023plastic.png" alt="neurips2023plastic" class="paper-images" style="width:92%">
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
@@ -626,9 +585,9 @@
     </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 2.5%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/neurips2023disco-dance4.png" alt="neurips2023disco-dance" class="paper-images" style="width:80%; margin-left:12.5%; margin-top: 1%">
+        <img src="pictures/neurips2023disco-dance4.png" alt="neurips2023disco-dance" class="paper-images" style="width:80%; margin-left:12.5%; margin-top: 0%">
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
         <!--
@@ -662,11 +621,11 @@
     </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 4%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/icml2023simtpr.png" alt="icml2023simtpr" class="paper-images" style="margin-left:13%; width:85%">
     </div>
-    <div class="col-xs-12 col-sm-9 right-column" style="margin-top:-1.5%">
+    <div class="col-xs-12 col-sm-9 right-column" style="margin-top:0%">
         <!--
         <span style="background-color:#e2c7e5">Reinforcement Learning</span>
         <span style="background-color:#ffdac1">Pre-training</span>
@@ -730,11 +689,11 @@
     </div>
     -->
 
-    <div class="row common-rows publication-entry" style="margin-top: 4%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/sigir2022irs.png" alt="sigir2022irs" class="paper-images" style="margin-left:5%">
         </div>
-        <div class="col-xs-12 col-sm-9 right-column" style="margin-top: -0.5%">
+        <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
             <!--
             <span style="background-color:#C9D3D8">Data Mining</span>
             <span style="background-color:#e2c7e5">Reinforcement Learning</span>
@@ -765,7 +724,7 @@
     </div>
 
 
-    <div class="row common-rows publication-entry" style="margin-top: 3%">
+    <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/www2022draftrec.png" alt="www2022draftrec" class="paper-images" style="margin-left:12.5%; width:85%">
         </div>
@@ -835,142 +794,145 @@
     -->
   <br>
 
-  <div class="container">
-    <div class="row section-heading-rows" style="margin-left:-2%; margin-top:2%">
-      <h5 style="z-index: 2;">Work Experience</h5>
+
+
+<div class="container experience-section">
+  <div class="row section-heading-rows">
+    <h5 style="z-index: 2;">Work Experience</h5>
+  </div>
+
+  <div class="row common-rows work-row">
+    <div class="col-xs-12 work-logo-col">
+      <div class="work-logo-box">
+        <img src="pictures/ci_holiday.svg" alt="Holiday Robotics Logo" class="work-logo logo-large">
+      </div>
     </div>
-
-    <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
-        <div class="col-xs-12 col-sm-3 left-column">
-            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-                <img src="pictures/ci_holiday.svg" alt="Sony AI Logo" style="max-width: 75%; max-height: 75%; object-fit: contain;">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <strong>Holiday Robotics</strong>
-            <span style="white-space: nowrap;">Jan 2026 - Present</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              Senior Research Scientist
-              <span style="white-space: nowrap;">Seoul, Korea</span>
-          </div>
-          <ul style="margin-left:-1.5em; margin-top:0.5em;">
-          <li>Dexterous Manipulation with RL</li>
-          </ul>
-        </div>
+    <div class="col-xs-12 work-text-col">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <strong>Holiday Robotics</strong>
+        <span style="white-space: nowrap;">Jan 2026 - Present</span>
       </div>
-
-    <div class="row common-rows" style="margin-top:-5%; margin-left:-3.5%">
-        <div class="col-xs-12 col-sm-3 left-column">
-            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-                <img src="pictures/ci_meta.svg" alt="Sony AI Logo" style="max-width: 75%; max-height: 75%; object-fit: contain;">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <strong>Meta Reality Labs</strong>
-            <span style="white-space: nowrap;">May 2025 - Nov 2025</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              Research Intern
-              <span style="white-space: nowrap;">Seattle, USA</span>
-          </div>
-          <ul style="margin-left:-1.5em; margin-top:0.5em;">
-          <li>Dexterous Manipulation with RL</li>
-          <li>Mentor: <a href="https://babbatem.github.io/">Ben Abbatematteo</a>, <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>. <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a>.</li>
-          </ul>
-        </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        Senior Research Scientist
+        <span style="white-space: nowrap;">Seoul, Korea</span>
       </div>
+      <ul>
+        <li>Dexterous Manipulation</li>
+      </ul>
+    </div>
+  </div>
 
-      <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
-        <div class="col-xs-12 col-sm-3 left-column">
-            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-                <img src="pictures/ci_krafton.png" alt="Krafton Logo" style="max-width: 75%; max-height: 75%; object-fit: contain;">
-          </div>
-        </div>
-      <div class="col-xs-12 col-sm-9 right-column">
-        <div style="display: flex; justify-content: space-between; align-items: baseline;">
-          <strong>Krafton AI</strong>
-          <span style="white-space: nowrap;">Feb 2025 - May 2025</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            Research Intern
-            <span style="white-space: nowrap;">Seoul, Korea</span>
-        </div>
-        <ul style="margin-left:-1.5em; margin-top:0.5em;">
+  <div class="row common-rows work-row">
+    <div class="col-xs-12 work-logo-col">
+      <div class="work-logo-box">
+        <img src="pictures/ci_meta.svg" alt="Meta Reality Labs Logo" class="work-logo logo-large">
+      </div>
+    </div>
+    <div class="col-xs-12 work-text-col">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <strong>Meta Reality Labs</strong>
+        <span style="white-space: nowrap;">May 2025 - Nov 2025</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        Research Intern
+        <span style="white-space: nowrap;">Seattle, USA</span>
+      </div>
+      <ul>
+        <li>Dexterous Manipulation with RL</li>
+        <li>Mentor: <a href="https://babbatem.github.io/">Ben Abbatematteo</a>, <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>. <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row common-rows work-row">
+    <div class="col-xs-12 work-logo-col">
+      <div class="work-logo-box">
+        <img src="pictures/ci_krafton.png" alt="Krafton Logo" class="work-logo logo-large">
+      </div>
+    </div>
+    <div class="col-xs-12 work-text-col">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <strong>Krafton AI</strong>
+        <span style="white-space: nowrap;">Feb 2025 - May 2025</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        Research Intern
+        <span style="white-space: nowrap;">Seoul, Korea</span>
+      </div>
+      <ul>
         <li>Chess Agent with RLVR: <a href="https://arxiv.org/abs/2507.00726">arXiv</a></li>
         <li>Mentor: <a href="https://jerryjonghopark.github.io/">Jongho Park</a>, <a href="https://dongmean.github.io/">Dongmin Park</a></li>
-        </ul>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row common-rows work-row">
+    <div class="col-xs-12 work-logo-col">
+      <div class="work-logo-box">
+        <img src="pictures/ci_sony_ai.png" alt="Sony AI Logo" class="work-logo logo-large">
       </div>
     </div>
-
-    <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
-        <div class="col-xs-12 col-sm-3 left-column">
-            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-                <img src="pictures/ci_sony_ai.png" alt="Sony AI Logo" style="max-width: 95%; max-height: 95%; object-fit: contain;">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <strong>Sony AI</strong>
-            <span style="white-space: nowrap;">Feb 2024 - Aug 2024</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              Research Intern
-              <span style="white-space: nowrap;">Tokyo, Japan</span>
-          </div>
-          <ul style="margin-left:-1.5em; margin-top:0.5em;">
-          <li>Vision-based Racing agent in Gran Turismo 7 with RL: <a href="https://arxiv.org/abs/2504.09021">arXiv</a></li>
-          <li>Mentor: <a href="#">Takuma Seno</a>, <a href="#">Kaushik Subramanian</a>, <a href="#">Peter Stone</a>.</li>
-          </ul>
-        </div>
+    <div class="col-xs-12 work-text-col">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <strong>Sony AI</strong>
+        <span style="white-space: nowrap;">Feb 2024 - Aug 2024</span>
       </div>
-
-      <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
-        <div class="col-xs-12 col-sm-3 left-column">
-            <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-                <img src="pictures/ci_kakao.png" alt="Neowiz Logo" style="max-width: 60%; max-height: 60%; object-fit: contain;">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <strong>Kakao Enterprise</strong>
-            <span style="white-space: nowrap;">Sep 2021 - Nov 2021</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              Research Intern
-              <span style="white-space: nowrap;">Pangyo, Korea</span>
-          </div>
-          <ul style="margin-left:-1.5em; margin-top:0.5em;">
-          <li>Built an open‑source RL framework, <a href="https://github.com/kakaoenterprise/JORLDY">Jorldy</a> (300+★).</li>
-          <li>Mentor: <a href="https://scholar.google.co.kr/citations?user=dz8VK3IAAAAJ&hl=ko">Kyushik Min</a>.</li>
-          </ul>
-        </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        Research Intern
+        <span style="white-space: nowrap;">Tokyo, Japan</span>
       </div>
-
-      <div class="row common-rows" style="margin-top:-3%; margin-left:-3.5%">
-        <div class="col-xs-12 col-sm-3 left-column">
-          <div style="width: 100%; height: 150px; background-color: #ffffff; display: flex; justify-content: center; align-items: center; border-radius: 0px;">
-            <img src="pictures/ci_neowiz.svg" alt="Neowiz Logo" style="max-width: 55%; max-height: 55%; object-fit: contain;">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-9 right-column">
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <strong>Neowiz</strong>
-            <span style="white-space: nowrap;">Mar 2019 - Jun 2019</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              Research Intern
-              <span style="white-space: nowrap;">Pangyo, Korea</span>
-          </div>
-          <ul style="margin-left:-1.5em; margin-top:0.5em;">
-          <li>Turn-Based Game Agent for <a href="https://play.google.com/store/apps/details?id=com.neowizgames.game.browndust.srpg.global&hl=en&pli=1">Brave Nine</a>: <a href="data/korea2019browndust.pdf">Poster</a></li>
-          <li>Mentor: Jaejin Yoon</li>
-        </ul>
-        </div>
-      </div>
+      <ul>
+        <li>Vision-based Racing agent in Gran Turismo 7 with RL: <a href="https://arxiv.org/abs/2504.09021">arXiv</a></li>
+        <li>Mentor: <a href="#">Takuma Seno</a>, <a href="#">Kaushik Subramanian</a>, <a href="#">Peter Stone</a>.</li>
+      </ul>
+    </div>
   </div>
+
+  <div class="row common-rows work-row">
+    <div class="col-xs-12 work-logo-col">
+      <div class="work-logo-box">
+        <img src="pictures/ci_kakao.png" alt="Kakao Enterprise Logo" class="work-logo logo-medium">
+      </div>
+    </div>
+    <div class="col-xs-12 work-text-col">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <strong>Kakao Enterprise</strong>
+        <span style="white-space: nowrap;">Sep 2021 - Nov 2021</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        Research Intern
+        <span style="white-space: nowrap;">Pangyo, Korea</span>
+      </div>
+      <ul>
+        <li>Built an open-source RL framework, <a href="https://github.com/kakaoenterprise/JORLDY">Jorldy</a> (300+★).</li>
+        <li>Mentor: <a href="https://scholar.google.co.kr/citations?user=dz8VK3IAAAAJ&hl=ko">Kyushik Min</a>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row common-rows work-row">
+    <div class="col-xs-12 work-logo-col">
+      <div class="work-logo-box">
+        <img src="pictures/ci_neowiz.svg" alt="Neowiz Logo" class="work-logo logo-medium">
+      </div>
+    </div>
+    <div class="col-xs-12 work-text-col">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <strong>Neowiz</strong>
+        <span style="white-space: nowrap;">Mar 2019 - Jun 2019</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        Research Intern
+        <span style="white-space: nowrap;">Pangyo, Korea</span>
+      </div>
+      <ul>
+        <li>Turn-Based Game Agent for <a href="https://play.google.com/store/apps/details?id=com.neowizgames.game.browndust.srpg.global&hl=en&pli=1">Brave Nine</a>: <a href="data/korea2019browndust.pdf">Poster</a></li>
+        <li>Mentor: Jaejin Yoon</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
   <br>
 
 
@@ -986,44 +948,29 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const publications = document.querySelectorAll('.publication-entry');
-        
-        // Function to apply filtering
-        function applyFilter(filterValue) {
-          // Remove active class from all buttons
-          filterBtns.forEach(btn => btn.classList.remove('active'));
-          
-          // Add active class to the button with matching data-filter
-          const activeBtn = document.querySelector(`.filter-btn[data-filter="${filterValue}"]`);
-          if (activeBtn) {
-            activeBtn.classList.add('active');
-          }
-          
-          // Show/hide publications based on filter
-          if (filterValue === 'selected') {
-            publications.forEach(pub => {
-              if (pub.classList.contains('selected-publication')) {
-                pub.classList.remove('hidden');
-              } else {
-                pub.classList.add('hidden');
-              }
-            });
-          } else if (filterValue === 'all') {
-            publications.forEach(pub => pub.classList.remove('hidden'));
-          }
-        }
-        
-        // Add click event listeners to filter buttons
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const publications = document.querySelectorAll('.publication-entry, .selected-publication');
+
+      function applyFilter(filterValue) {
         filterBtns.forEach(btn => {
-          btn.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            applyFilter(filter);
-          });
+          btn.classList.toggle('active', btn.getAttribute('data-filter') === filterValue);
         });
-        
-        // Apply the "selected" filter by default on page load
-        applyFilter('selected');
+
+        publications.forEach(pub => {
+          const shouldShow = filterValue === 'all' || pub.classList.contains('selected-publication');
+          pub.classList.toggle('hidden', !shouldShow);
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+          event.preventDefault();
+          applyFilter(this.getAttribute('data-filter'));
+        });
       });
+
+      applyFilter('selected');
+    });
   </script>
 </body>
+</html>
