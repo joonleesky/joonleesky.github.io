@@ -487,6 +487,12 @@ span.highlight {
     margin-bottom: 10px;
   }
 
+  /* Cap logo size on mobile so wide wordmarks don't span the full screen width */
+  .experience-section .work-logo {
+    max-width: 160px !important;
+    max-height: 80px !important;
+  }
+
   .experience-section > .row.common-rows > .left-column > div {
     height: 90px !important;
   }
