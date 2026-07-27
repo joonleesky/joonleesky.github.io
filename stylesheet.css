@@ -19,10 +19,10 @@
 
   --pub-figure-col: 24%;
   --pub-content-col: 76%;
-  --pub-gap: 32px;
-  --pub-image-width: 165px;
-  --pub-image-height: 118px;
-  --pub-text-nudge-y: 8px;
+  --pub-gap: 24px;
+  --pub-image-width: 170px;
+  --pub-image-height: 105px;
+  --pub-text-nudge-y: -3px;
 
   --work-logo-box-height: 120px;
   --work-text-nudge-y: -2px;
@@ -227,8 +227,8 @@ span.highlight {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
   transition: opacity 0.3s ease;
 }
 
@@ -264,19 +264,24 @@ span.highlight {
   width: 100% !important;
   max-width: var(--pub-image-width);
   height: var(--pub-image-height) !important;
-  object-fit: contain;
-  margin: 0 auto !important;
-}
-
-.publication-entry .cropped-gif,
-.selected-publication .cropped-gif {
   object-fit: cover;
-  clip-path: inset(20% 0 20% 0);
+  margin: 0 auto !important;
+  padding: 2% 5%;
+  box-sizing: border-box;
 }
 
 /* Removes extra top space if a publication text column starts with <br> */
 .publication-entry .right-column > br:first-child,
 .selected-publication .right-column > br:first-child {
+  display: none;
+}
+
+/* Removes trailing <br><br> so inter-entry gaps stay uniform (driven by margins, not content height).
+   :has() targets only a truly trailing pair, so entries ending in a <p> description are left intact. */
+.publication-entry .right-column > br:last-child,
+.selected-publication .right-column > br:last-child,
+.publication-entry .right-column > br:has(+ br:last-child),
+.selected-publication .right-column > br:has(+ br:last-child) {
   display: none;
 }
 
@@ -304,7 +309,7 @@ span.highlight {
   align-items: center;
   justify-content: center;
   padding-left: 4px;
-  padding-right: 32px;
+  padding-right: 24px;
 }
 
 .experience-section .work-text-col {
@@ -352,7 +357,9 @@ span.highlight {
 .experience-section ul {
   margin-top: 0.5em;
   margin-bottom: 0;
-  margin-left: -1.5em;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 /* Support older work-experience markup that uses left/right columns */
@@ -509,5 +516,5 @@ span.highlight {
 .publication-section .publication-filter + .publication-entry,
 .publication-section .section-heading-rows + .selected-publication,
 .publication-section .publication-filter + .selected-publication {
-  margin-top: 0 !important;
+  margin-top: -8px !important;
 }
