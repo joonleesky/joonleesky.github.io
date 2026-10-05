@@ -23,7 +23,8 @@
   <meta name="author" content="Hojoon Lee">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261006c">
   <link rel="icon" type="image/png" href="pictures/personal_round.png">
 
 </head>
@@ -31,13 +32,12 @@
 <body>
   <div class="container">
     <div class="row" style="margin-top: 10px;">
-      <div class="col-sm-4 name-column" style="min-width: 266px;">
-        <p style="text-align:center">
+      <div class="col-xs-12 col-sm-8 personal-column">
+        <p class="name-line">
           <name>Hojoon Lee</name>
         </p>
       </div>
-      <div class="col-sm-8 name-column text-right" style="min-width: 266px; margin-top: 10px">
-      </div>
+      <div class="col-sm-4"></div>
     </div>
     <div class="row common-rows">
 
@@ -47,22 +47,22 @@
         <p>
         <p> 
         I received my PhD from KAIST, advised by <a href="https://sites.google.com/site/jaegulchoo/">Prof. Jaegul Choo</a>.
-        During my PhD, I focused on sample- and compute-efficient deep reinforcement learning, which includes Simba series:<a href="https://arxiv.org/abs/2410.09754">1</a>,<a href="https://arxiv.org/abs/2502.15280">2</a> and <a href="https://arxiv.org/abs/2604.04539">FlashSAC</a>. 
+        During my PhD, I focused on sample- and compute-efficient deep reinforcement learning, which includes <a href="https://arxiv.org/abs/2410.09754">SimbaV1</a>, <a href="https://arxiv.org/abs/2502.15280">SimbaV2</a>, and <a href="https://arxiv.org/abs/2604.04539">FlashSAC</a>. 
         <p>  
-        Beyond my academic work, I have applied reinforcement learning to robotics and games at <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a>, <a href="https://ai.sony/">Sony AI</a>, <a href="https://www.krafton.ai/en/">Krafton</a>, <a href="https://www.kakaocorp.com/">Kakao</a>, and <a href="https://www.neowiz.com/">Neowiz</a>. I also founded <a href="https://davian-robotics.github.io/">Davian Robotics</a>, a student-led physical AI research group built on a collaborative, interdisciplinary, hands-on culture.
+        Beyond my academic work, I have applied reinforcement learning to robotics and games at <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a>, <a href="https://ai.sony/">Sony AI</a>, <a href="https://www.krafton.ai/en/">Krafton</a>, <a href="https://www.kakaocorp.com/">Kakao</a>, and <a href="https://www.neowiz.com/">Neowiz</a>. I also founded <a href="https://davian-robotics.github.io/">DAVIAN Robotics</a>, a student-led physical AI research group built on a collaborative, interdisciplinary, hands-on culture.
         </p>
         <p>  
           If you're excited about building the best humanoids in Korea with us at <a href="https://www.holiday-robotics.com">Holiday Robotics</a>, feel free to reach out.
         </p>
 
-        <p style="text-align:center">
-          <a href="mailto:joonleesky@naver.com">Email</a> &nbsp/&nbsp
-          <a href="data/hojoonlee202608cv.pdf">CV</a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?user=g0R5CDMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://www.linkedin.com/in/hojoon-lee-6872a4222/">LinkedIn</a> &nbsp/&nbsp
-          <a href="https://x.com/hojoon_ai">Twitter</a> &nbsp/&nbsp
-          <a href="https://github.com/joonleesky/">Github</a>
-        </p>
+        <div class="profile-links">
+          <a class="pill" href="mailto:joonleesky@naver.com"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a>
+          <a class="pill" href="data/hojoonlee202608cv.pdf"><i class="fas fa-file-lines" aria-hidden="true"></i>CV</a>
+          <a class="pill" href="https://scholar.google.com/citations?user=g0R5CDMAAAAJ&hl=en"><i class="fab fa-google-scholar" aria-hidden="true"></i>Scholar</a>
+          <a class="pill" href="https://www.linkedin.com/in/hojoon-lee-6872a4222/"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+          <a class="pill" href="https://x.com/hojoon_ai"><i class="fab fa-x-twitter" aria-hidden="true"></i>X</a>
+          <a class="pill" href="https://github.com/joonleesky/"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
+        </div>
 
       </div>
       <div class="col-xs-12 col-sm-4 personal-column" style="margin-top: 10px">
@@ -75,7 +75,7 @@
     <div class="row section-heading-rows">
       <h5>Publications</h5>
     </div>
-    <div class="publication-filter" style="margin-top:-1%">
+    <div class="publication-filter">
       <a href="javascript:void(0)" class="filter-btn active" data-filter="selected">Selected</a> /
       <a href="javascript:void(0)" class="filter-btn" data-filter="all">All</a>
     </div>
@@ -101,10 +101,10 @@
         <strong>Hojoon Lee<sup>†</sup></strong>
         <br>
         <em>Preprint</em>
-        <br>
-        <a href="https://holiday-robot.github.io/FlashDexRetarget/">project page</a> /
-        <a href="https://arxiv.org/abs/2610.01849">arXiv</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://holiday-robot.github.io/FlashDexRetarget/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2610.01849"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+        </div>
       </div>
     </div>
 
@@ -126,17 +126,17 @@
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
         <br>
         <em>Preprint</em>
-        <br>
-        <a href="https://davian-robotics.github.io/pointmap/">project page</a> /
-        <a href="https://arxiv.org/abs/2607.11498">arXiv</a> /
-        <a href="https://github.com/davian-robotics/pointmap">code</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://davian-robotics.github.io/pointmap/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2607.11498"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/davian-robotics/pointmap"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
       </div>
     </div>
 
-    <div class="row common-rows publication-entry" style="margin-top: 0%">
+    <div class="row common-rows selected-publication" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/preprint2025phuma.gif" alt="preprint2025phuma" class="paper-images">
+            <video src="pictures/preprint2025phuma.mp4" class="paper-images" autoplay muted loop playsinline></video>
         </div>
       <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
         <br>
@@ -155,11 +155,11 @@
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo<sup>†</sup></a>
         <br>
         <em>CoRL'26, <span style="color:#c0392b">Spotlight</span></em>
-        <br>
-        <a href="https://davian-robotics.github.io/PHUMA/">project page</a> /
-        <a href="https://arxiv.org/abs/2510.26236">arXiv</a> /
-        <a href="https://github.com/davian-robotics/PHUMA">code</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://davian-robotics.github.io/PHUMA/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2510.26236"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/davian-robotics/PHUMA"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
       </div>
     </div>
 
@@ -189,10 +189,10 @@
         <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo</a>
         <br>
         <em>IROS'26</em>
-        <br>
-        <a href="https://davian-robotics.github.io/3D_HAMSTER/">project page</a> /
-        <a href="https://arxiv.org/abs/2606.31329">arXiv</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://davian-robotics.github.io/3D_HAMSTER/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2606.31329"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+        </div>
       </div>
     </div>
 
@@ -211,7 +211,7 @@
         </papertitle>
         <br>
         <strong>Hojoon Lee</strong>,
-        <a href="https://ajaysubramanian.com/">Ajay Subramanian</a>.
+        <a href="https://ajaysubramanian.com/">Ajay Subramanian</a>,
         <a href="https://babbatem.github.io/">Ben Abbatematteo</a>,
         <a href="https://pmatias.xyz/">Pedro Matias</a>,
         <a href="https://vijayvee.github.io/">Vijay Veerabadran</a>, 
@@ -220,9 +220,9 @@
         <br>
         <em>RLC'26
         </em>
-        <br>
-        <a href="https://arxiv.org/abs/2606.01672">arXiv</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://arxiv.org/abs/2606.01672"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+        </div>
       </div>
     </div>
 
@@ -246,7 +246,7 @@
         <a href="https://kinam0252.github.io/">Kinam Kim</a>,
         <a href="https://takuseno.github.io/">Takuma Seno</a>,
         <a href="https://anahrendra.github.io/">Aswin Nahrendra</a>,
-        <a href="https://seiing.github.io/">Sehee Min</a>,
+        <a href="https://seiing.github.io/" style="white-space: normal;">Sehee Min</a>,
         <a href="https://www.linkedin.com/in/danielpalenicek/">Daniel Palenicek</a>,
         <a href="https://scholar.google.com/citations?user=PvEf33EAAAAJ">Florian Vogt</a>, 
         <a href="https://www.csc.kth.se/~dani/">Danica Kragic</a>,
@@ -255,11 +255,11 @@
         <strong>Hojoon Lee<sup>†</sup></strong>
         <br>
         <em>RSS'26, <span style="color:#c0392b"> Outstanding Paper Award 🏆</span></em>
-        <br>
-        <a href="https://holiday-robot.github.io/FlashSAC/">project page</a> /
-        <a href="https://arxiv.org/abs/2604.04539">arXiv</a> /
-        <a href="https://github.com/Holiday-Robot/FlashSAC">code</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://holiday-robot.github.io/FlashSAC/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2604.04539"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/Holiday-Robot/FlashSAC"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
       </div>
     </div>
 
@@ -283,17 +283,41 @@
         <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo<sup>†</sup></a>
         <br>
         <em>ICRA'26</em>
+        <div class="paper-links">
+          <a class="paper-link" href="https://davian-robotics.github.io/ACG/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2510.22201"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/davian-robotics/ACG?tab=readme-ov-file"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="row common-rows publication-entry" style="margin-top: 0%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+            <img src="pictures/thumbs/preprint2025fire.png" class="paper-images">
+        </div>
+      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
         <br>
-        <a href="https://davian-robotics.github.io/ACG/">project page</a> /
-        <a href="https://arxiv.org/abs/2510.22201">arXiv</a> /
-        <a href="https://github.com/davian-robotics/ACG?tab=readme-ov-file">code</a>        
-        <br><br>
+        <papertitle>
+        FIRE: Frobenius-Isometry Reinitialization for Balancing Stability-Plasticity Tradeoff
+        </papertitle>
+        <br>
+        <a href="https://scholar.google.com/citations?user=ralPRksAAAAJ&hl=ko">Isaac Han</a>,
+        Sangyeon Park,
+        Seungwon Oh,
+        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+        <strong>Hojoon Lee<sup>†</sup></strong>,
+        <a href="https://cilab.gist.ac.kr/hp/">Kyungjoon Kim<sup>†</sup></a>
+        <br>
+        <em>ICLR'26, <span style="color:#c0392b">Oral</span></em>
+        <div class="paper-links">
+          <a class="paper-link" href="https://arxiv.org/abs/2602.08040"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+        </div>
       </div>
     </div>
 
     <div class="row common-rows selected-publication" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/thesis.png" class="paper-images">
+            <img src="pictures/thumbs/thesis.png" class="paper-images">
         </div>
       <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
         <!--
@@ -305,7 +329,7 @@
         Maintaining Plasticity for Scalable Deep Reinforcement Learning
         </papertitle>
         <br>
-        Commitee: 
+        Committee: 
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
         <a href="https://chulheeyun.github.io/">Chulhee Yun</a>,
         <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>,
@@ -313,38 +337,14 @@
         <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>
         <br>
         <em>Thesis</em>
-        <br>
-        <a href="data/thesis2025.pdf">slide</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="data/thesis2025.pdf"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             Introduce champion-level vision-based RL agent in GranTurismo 7!
         </p>
         -->
-      </div>
-    </div>
-
-      <div class="row common-rows publication-entry" style="margin-top: 0%">
-        <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/preprint2025fire.png" class="paper-images">
-        </div>
-      <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
-        <br>
-        <papertitle>
-        FIRE: Frobenius-Isometry Reinitialization for Balancing Stability-Plasticity Tradeoff
-        </papertitle>
-        <br>
-        <a href="https://scholar.google.com/citations?user=ralPRksAAAAJ&hl=ko">Isaac Han</a>.
-        Sangyeon Park,
-        Seungwon Oh,
-        <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
-        <strong>Hojoon Lee<sup>†</sup></strong>,
-        <a href="https://cilab.gist.ac.kr/hp/">Kyungjoon Kim<sup>†</sup></a>
-        <br>
-        <em>ICLR'26, <span style="color:#c0392b">Oral</span></em>
-        <br>
-        <a href="https://arxiv.org/abs/2602.08040">arXiv</a>
-        <br><br>
       </div>
     </div>
 
@@ -363,18 +363,18 @@
         </papertitle>
         <br>
         <strong>Hojoon Lee*</strong>,
-        <a href="https://takuseno.github.io/">Takuma Seno*</a>.
+        <a href="https://takuseno.github.io/">Takuma Seno*</a>,
         <a href="https://taijunjet.com">Jun Jet Tai*</a>,
         <a href="https://kausubbu.github.io">Kaushik Subramanian</a>,
         Kenta Kawamoto,
         <a href="https://www.pwurman.org">Peter R. Wurman</a>,
-        <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+        <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>
         <br>
         <em>IEEE RA-L & ICRA'26</em>
-        <br>
-        <a href="data/preprint2025visiongt.pdf">arXiv</a> /
-        <a href="https://www.youtube.com/watch?v=a-GuIbQOw_c">video</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="data/preprint2025visiongt.pdf"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://www.youtube.com/watch?v=a-GuIbQOw_c"><i class="fas fa-play" aria-hidden="true"></i>Video</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             Introduce champion-level vision-based RL agent in GranTurismo 7!
@@ -385,7 +385,7 @@
 
     <div class="row common-rows selected-publication" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/simbav2.png" alt="preprint2025simbav2" class="paper-images">
+            <img src="pictures/thumbs/simbav2.png" alt="preprint2025simbav2" class="paper-images">
         </div>
       <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
         <!--
@@ -397,18 +397,18 @@
         </papertitle>
         <br>
         <strong>Hojoon Lee*</strong>,
-        <a href="https://leeyngdo.github.io/">Youngdo Lee*</a>.
-        <a href="https://takuseno.github.io/">Takuma Seno</a>.
+        <a href="https://leeyngdo.github.io/">Youngdo Lee*</a>,
+        <a href="https://takuseno.github.io/">Takuma Seno</a>,
         <a href="https://i-am-proto.github.io">Donghu Kim</a>,
         <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
         <a href="https://sites.google.com/site/jaegulchoo">Jaegul Choo</a>
         <br>
-        <em>ICML'25, <span style="color:#e67e22">Spotlight</span></em>
-        <br>
-        <a href="https://dojeon-ai.github.io/SimbaV2/">project page</a> /
-        <a href="https://arxiv.org/abs/2502.15280">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/SimbaV2">code</a>
-        <br><br>
+        <em>ICML'25, <span style="color:#c0392b">Spotlight</span></em>
+        <div class="paper-links">
+          <a class="paper-link" href="https://dojeon-ai.github.io/SimbaV2/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2502.15280"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/dojeon-ai/SimbaV2"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             Designed network architectures with hyperspherical normalization which allows scaling up computation and parameters in RL.
@@ -441,12 +441,12 @@
         <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
         <a href="https://takuseno.github.io/">Takuma Seno</a>
         <br>
-        <em>ICLR'25, <span style="color:#e67e22">Spotlight</span></em>
-        <br>
-        <a href="https://sonyresearch.github.io/simba/">project page</a> /
-        <a href="https://arxiv.org/abs/2410.09754">arXiv</a> /
-        <a href="https://github.com/SonyResearch/simba">code</a>
-        <br><br>
+        <em>ICLR'25, <span style="color:#c0392b">Spotlight</span></em>
+        <div class="paper-links">
+          <a class="paper-link" href="https://sonyresearch.github.io/simba/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2410.09754"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/SonyResearch/simba"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             Designed network architectures that steer convergence toward simple functions which allows to scale up parameters in RL.
@@ -457,7 +457,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 0%">
-          <img src="pictures/preprint2024dodont.png" alt="neurips2024dodont" class="paper-images">
+          <img src="pictures/thumbs/preprint2024dodont.png" alt="neurips2024dodont" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
         <!--
@@ -466,7 +466,7 @@
         -->
         <br>
         <papertitle>
-            Do's and Don'ts:Learning Desirable Skills with Instruction Videos
+            Do's and Don'ts: Learning Desirable Skills with Instruction Videos
         </papertitle>
         <br>
         <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
@@ -474,13 +474,13 @@
         <strong>Hojoon Lee</strong>,
         <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
         <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
-        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
         <br>
         <em>NeurIPS'24</em>
-        <br>
-        <a href="https://mynsng.github.io/dodont/">project page</a> /
-        <a href="https://arxiv.org/abs/2406.00324v1">arXiv</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://mynsng.github.io/dodont/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2406.00324v1"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             We present DoDont, a skill discovery algorithm that learns diverse behaviors 
@@ -492,7 +492,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-          <img src="pictures/icml2024hnt.png" alt="icml2024hnt" class="paper-images">
+          <img src="pictures/thumbs/icml2024hnt.png" alt="icml2024hnt" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
         <!--
@@ -513,11 +513,10 @@
         <a href="https://clarelyle.com/">Clare Lyle</a>
         <br>
         <em>ICML'24</em>
-        <br>
-        <a href="https://arxiv.org/abs/2406.02596">arXiv</a> /
-        <a href="https://icml.cc/media/PosterPDFs/ICML%202024/33921.png">poster</a> /
-        <a href="data/icml2024hnt.txt">Bibtex</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://arxiv.org/abs/2406.02596"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://icml.cc/media/PosterPDFs/ICML%202024/33921.png"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             To allow the network to continually adapt and generalize, we introduce Hare and Tortoise architecture, 
@@ -529,7 +528,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/icml2024atari-pb.png" alt="icml2024atari-pb" class="paper-images">
+            <img src="pictures/thumbs/icml2024atari-pb.png" alt="icml2024atari-pb" class="paper-images">
         </div>
         <div class="col-xs-12 col-sm-9 right-column">
           <!--
@@ -548,12 +547,11 @@
           <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
           <br>
           <em>ICML'24</em>
-          <br>
-          <a href="https://i-am-proto.github.io/atari-pb/">project page</a> /
-          <a href="https://arxiv.org/abs/2406.06037">arXiv</a> /
-          <a href="https://icml.cc/media/PosterPDFs/ICML%202024/34150.png">poster</a> /
-          <a href="data/icml2024ataripb.txt">Bibtex</a>
-          <br><br>
+          <div class="paper-links">
+            <a class="paper-link" href="https://i-am-proto.github.io/atari-pb/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+            <a class="paper-link" href="https://arxiv.org/abs/2406.06037"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+            <a class="paper-link" href="https://icml.cc/media/PosterPDFs/ICML%202024/34150.png"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+          </div>
           <!--
           <p style="margin-top: -1%;"> 
             We investigate which pre-training objectives are beneficial for in-distribution, near-out-of-distribution, and far-out-of-distribution generalization in visual reinforcement learning.
@@ -564,7 +562,7 @@
     
     <div class="row common-rows publication-entry" style="margin-top: 0%">
     <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 0%">
-        <img src="pictures/icml2024coin.png" alt="icml2024coin" class="paper-images">
+        <img src="pictures/thumbs/icml2024coin.png" alt="icml2024coin" class="paper-images">
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
         <!--
@@ -583,11 +581,10 @@
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
         <br>
         <em>ICML'24</em>
-        <br>
-        <a href="https://godnpeter.github.io/CoIn/">project page</a> /
-        <a href="https://arxiv.org/abs/2406.06037">arXiv</a> /
-        <a href="data/icml2024coin.txt">Bibtex</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://godnpeter.github.io/CoIn/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2406.06037"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             Introducing an add-on convolution module for pre-trained ViT models, 
@@ -599,7 +596,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column" style="margin-top: 0%">
-        <img src="pictures/neurips2023plastic.png" alt="neurips2023plastic" class="paper-images" style="object-fit: contain;">
+        <img src="pictures/thumbs/neurips2023plastic.png" alt="neurips2023plastic" class="paper-images" style="object-fit: contain;">
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
         <!--
@@ -621,13 +618,12 @@
         <a href="https://chulheeyun.github.io/">Chulhee Yun</a>
         <br>
         <em>NeurIPS'23</em>
-        <br>
-        <a href="https://arxiv.org/abs/2306.10711">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/plastic">code</a> /
-        <a href="https://drive.google.com/file/d/1-QeWhom9l7mUt3m7zJV-_DIGMtL7F2Cq/view?usp=sharing">slide</a> /
-        <a href="https://drive.google.com/file/d/1-OTP_-rw2x-csjsJ9jH7utuHw9zDxsJc/view?usp=sharing">poster</a> /
-        <a href="data/neurips2023plastic.txt">Bibtex</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://arxiv.org/abs/2306.10711"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/dojeon-ai/plastic"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+          <a class="paper-link" href="https://drive.google.com/file/d/1-QeWhom9l7mUt3m7zJV-_DIGMtL7F2Cq/view?usp=sharing"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+          <a class="paper-link" href="https://drive.google.com/file/d/1-OTP_-rw2x-csjsJ9jH7utuHw9zDxsJc/view?usp=sharing"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
             For sample-efficient RL, the agent needs to quickly adapt to various inputs (input plasticity) and outputs (label plasticity). 
@@ -639,7 +635,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/neurips2023disco-dance4.png" alt="neurips2023disco-dance" class="paper-images">
+        <video src="pictures/neurips2023disco-dance.mp4" class="paper-images" autoplay muted loop playsinline></video>
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
         <!--
@@ -658,12 +654,11 @@
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
         <br>
         <em>NeurIPS'23</em>
-        <br>
-        <a href="https://mynsng.github.io/discodance/">project page</a> /
-        <a href="https://arxiv.org/abs/2310.20178">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/discodance">code</a> /
-        <a href="data/neurips2023disco-dance.txt">Bibtex</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://mynsng.github.io/discodance/"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2310.20178"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/dojeon-ai/discodance"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
         We introduce DISCO-DANCE, a Skill Discovery algorithm focused on learning diverse, task-agnostic behaviors. 
@@ -675,7 +670,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/icml2023simtpr.png" alt="icml2023simtpr" class="paper-images" style="object-fit: contain;">
+        <img src="pictures/thumbs/icml2023simtpr2.png" alt="icml2023simtpr" class="paper-images">
     </div>
     <div class="col-xs-12 col-sm-9 right-column" style="margin-top:0%">
         <!--
@@ -695,12 +690,11 @@
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
         <br>
         <em>ICML'23</em>
-        <br>
-        <a href="https://arxiv.org/abs/2306.05637">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/SimTPR">code</a> /
-        <a href="https://drive.google.com/file/d/1FPJHtd3uY54P2iOoPBrnt8jD-ud6nF6G/view?usp=sharing">poster</a> /
-        <a href="data/icml2023simtpr.txt">Bibtex</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://arxiv.org/abs/2306.05637"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/dojeon-ai/SimTPR"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+          <a class="paper-link" href="https://drive.google.com/file/d/1FPJHtd3uY54P2iOoPBrnt8jD-ud6nF6G/view?usp=sharing"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+        </div>
         <!--
         <p style="margin-top: -1%;"> 
         We present a visual pre-training algorithm grounded in self-predictive learning principles tailored for reinforcement learning.
@@ -712,7 +706,7 @@
     <!--
     <div class="row common-rows publication-entry" style="margin-top: 3%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
-        <img src="pictures/cikm2023strap.png" alt="cikm2023strap" class="paper-images">
+        <img src="pictures/thumbs/cikm2023strap.png" alt="cikm2023strap" class="paper-images">
     </div>
     <div class="col-xs-12 col-sm-9 right-column">
         <span style="background-color:#C9D3D8">Data Mining</span>
@@ -727,12 +721,11 @@
         <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
         <br>
         <em>CIKM'23 (short)</em>
-        <br>
-        <a href="https://arxiv.org/abs/2308.10609v1">arXiv</a> /
-        <a href="https://github.com/dojeon-ai/STRAP">code</a> /
-        <a href="https://drive.google.com/file/d/1ht5I6-PQmzlVzF-1YQCkBO1XcrVGbjk7/view?usp=sharing">poster</a> /
-        <a href="data/cikm2023strap.txt">Bibtex</a>
-        <br><br>
+        <div class="paper-links">
+          <a class="paper-link" href="https://arxiv.org/abs/2308.10609v1"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+          <a class="paper-link" href="https://github.com/dojeon-ai/STRAP"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+          <a class="paper-link" href="https://drive.google.com/file/d/1ht5I6-PQmzlVzF-1YQCkBO1XcrVGbjk7/view?usp=sharing"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+        </div>
         <p style="margin-top: -1%;"> 
         We construct a real estate appraisal framework that integrates spatial and temporal aspects, 
         validated using a dataset of 3.6M real estate transactions in South Korea from 2016 to 2020.          
@@ -743,7 +736,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/sigir2022irs.png" alt="sigir2022irs" class="paper-images">
+            <img src="pictures/thumbs/sigir2022irs.png" alt="sigir2022irs" class="paper-images">
         </div>
         <div class="col-xs-12 col-sm-9 right-column" style="margin-top: 0%">
             <!--
@@ -761,11 +754,10 @@
             <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
             <br>
             <em>SIGIR'22 (short), <span style="color:#c0392b"> Honorable Mention Award 🥈</span></em>
-            <br>
-            <a href="https://dl.acm.org/doi/abs/10.1145/3477495.3531869">arXiv</a> /
-            <a href="https://drive.google.com/file/d/13PEGDMrfZaG-PcCp0tx-A_L_2E1MKqQm/view?usp=sharing">poster</a> /
-            <a href="data/sigir2022irs.txt">Bibtex</a>
-            <br><br>
+            <div class="paper-links">
+              <a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3477495.3531869"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+              <a class="paper-link" href="https://drive.google.com/file/d/13PEGDMrfZaG-PcCp0tx-A_L_2E1MKqQm/view?usp=sharing"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+            </div>
             <!--
             <p style="margin-top: -1%;">              
                 Through validating the long-term impact of user feedback in MovieLens and Amazon Review datasets, 
@@ -778,7 +770,7 @@
 
     <div class="row common-rows publication-entry" style="margin-top: 0%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/www2022draftrec.png" alt="www2022draftrec" class="paper-images" style="object-fit: contain; max-width: 150px;">
+            <img src="pictures/thumbs/www2022draftrec.png" alt="www2022draftrec" class="paper-images" style="object-fit: contain;">
         </div>
         <div class="col-xs-12 col-sm-9 right-column">
             <!--
@@ -798,12 +790,11 @@
             <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
             <br>
             <em>WWW'22</em>
-            <br>
-            <a href="https://arxiv.org/abs/2204.12750">arXiv</a> /
-            <a href="https://github.com/dojeon-ai/DraftRec">code</a> /
-            <a href="https://drive.google.com/file/d/15L2ZqVutI3xjwJXq9NGbizSZbNsQEXOK/view?usp=sharing">poster</a> /
-            <a href="data/www2022draftrec.txt">Bibtex</a>
-            <br><br>
+            <div class="paper-links">
+              <a class="paper-link" href="https://arxiv.org/abs/2204.12750"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+              <a class="paper-link" href="https://github.com/dojeon-ai/DraftRec"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+              <a class="paper-link" href="https://drive.google.com/file/d/15L2ZqVutI3xjwJXq9NGbizSZbNsQEXOK/view?usp=sharing"><i class="fas fa-image" aria-hidden="true"></i>Poster</a>
+            </div>
             <!--
             <p style="margin-top: -1%;">                         
                 We gathered data from 280,000 matches played by the top 0.3% rank players in Korea for League of Legends. 
@@ -816,7 +807,7 @@
     <!--
     <div class="row common-rows publication-entry" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-            <img src="pictures/cog2022gunshot.png" alt="cog2022gunshot" class="paper-images">
+            <img src="pictures/thumbs/cog2022gunshot.png" alt="cog2022gunshot" class="paper-images">
         </div>
         <div class="col-xs-12 col-sm-9 right-column">
             <span style="background-color:#C9D3D8">Data Mining</span>
@@ -833,10 +824,9 @@
             <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
             <br>
             <em>COG'22</em>
-            <br>
-            <a href="https://arxiv.org/abs/2210.05917">arXiv</a> /
-            <a href="data/cog2022gunshot.txt">Bibtex</a>
-            <br><br>
+            <div class="paper-links">
+              <a class="paper-link" href="https://arxiv.org/abs/2210.05917"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+            </div>
             <p style="margin-top: -1%;">                         
                 We collected a gunshot sound dataset from PlayerUnknown's Battlegrounds (PUBG). 
                 Using this data, we developed a gunshot localization model that can be applied to real-world scenarios.
@@ -844,9 +834,6 @@
         </div>
     </div>
     -->
-  <br>
-
-
 
 <div class="container experience-section">
   <div class="row section-heading-rows">
@@ -862,7 +849,7 @@
     <div class="col-xs-12 work-text-col">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <strong>Holiday Robotics</strong>
-        <span style="white-space: nowrap;">Jan 2026 - Present</span>
+        <span style="white-space: nowrap;">Jan 2026 – Present</span>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         Senior Research Scientist
@@ -883,7 +870,7 @@
     <div class="col-xs-12 work-text-col">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <strong>Meta Reality Labs</strong>
-        <span style="white-space: nowrap;">May 2025 - Nov 2025</span>
+        <span style="white-space: nowrap;">May 2025 – Nov 2025</span>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         Research Intern
@@ -891,7 +878,7 @@
       </div>
       <ul>
         <li><a href="https://arxiv.org/abs/2606.01672">Reward Design for Dexterous Manipulation</a></li>
-        <li>Mentor: <a href="https://babbatem.github.io/">Ben Abbatematteo</a>, <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>. <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a></li>
+        <li>Mentor: <a href="https://babbatem.github.io/">Ben Abbatematteo</a>, <a href="https://nitinkamra1992.github.io/">Nitin Kamra</a>, <a href="https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en">Karl Ridgeway</a></li>
       </ul>
     </div>
   </div>
@@ -905,7 +892,7 @@
     <div class="col-xs-12 work-text-col">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <strong>Krafton AI</strong>
-        <span style="white-space: nowrap;">Feb 2025 - May 2025</span>
+        <span style="white-space: nowrap;">Feb 2025 – May 2025</span>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         Research Intern
@@ -927,7 +914,7 @@
     <div class="col-xs-12 work-text-col">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <strong>Sony AI</strong>
-        <span style="white-space: nowrap;">Feb 2024 - Aug 2024</span>
+        <span style="white-space: nowrap;">Feb 2024 – Aug 2024</span>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         Research Intern
@@ -949,7 +936,7 @@
     <div class="col-xs-12 work-text-col">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <strong>Kakao Enterprise</strong>
-        <span style="white-space: nowrap;">Sep 2021 - Nov 2021</span>
+        <span style="white-space: nowrap;">Sep 2021 – Nov 2021</span>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         Research Intern
@@ -971,7 +958,7 @@
     <div class="col-xs-12 work-text-col">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <strong>Neowiz</strong>
-        <span style="white-space: nowrap;">Mar 2019 - Jun 2019</span>
+        <span style="white-space: nowrap;">Mar 2019 – Jun 2019</span>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         Research Intern
@@ -991,7 +978,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <p style="text-align:right;font-size:small;">
+        <p class="site-footer">
           Template based on <a href="https://jonbarron.info/">Jon Barron's website</a>.
         </p>
       </div>

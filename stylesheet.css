@@ -1,37 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap');
 
 /* =========================================================
-   Base settings
+   Tokens
    ========================================================= */
 
 :root {
-  --font-main: 'Lato', Verdana, Helvetica, sans-serif;
+  --font-main: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
-  --text-size: 14px;
+  --text-size: 13px;
   --name-size: 32px;
   --heading-size: 22px;
 
+  --text-strong: #171717;
+  --text-body: #404040;
+  --text-muted: #525252;
+  --text-faint: #737373;
+  --line: #e5e5e5;
+
   --link-color: #1772d0;
   --link-hover-color: #f09228;
-  --highlight-color: #ffffd0;
+  --author-link-color: #4f86c6;
 
-  --container-width: 800px;
+  --container-width: 830px;
+  --entry-gap: 28px;
+  --section-gap: 48px;
 
-  --pub-figure-col: 24%;
-  --pub-content-col: 76%;
+  /* Publications and work experience share one two-column grid */
+  --pub-figure-col: 25%;
+  --pub-content-col: 75%;
   --pub-gap: 24px;
-  --pub-image-width: 170px;
-  --pub-image-height: 105px;
+  --pub-image-width: 168px;
+  --pub-image-height: 104px;
   --pub-text-nudge-y: -3px;
-
-  --work-logo-box-height: 120px;
   --work-text-nudge-y: -2px;
 }
+
+/* =========================================================
+   Base
+   ========================================================= */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -69,9 +85,13 @@ a:focus {
   text-decoration: none;
 }
 
-strong,
-papertitle {
+strong {
   font-weight: 700;
+}
+
+papertitle {
+  font-weight: 600;
+  color: var(--text-strong);
 }
 
 heading {
@@ -80,15 +100,13 @@ heading {
 
 name {
   font-size: var(--name-size);
-}
-
-.highlight,
-span.highlight {
-  background-color: var(--highlight-color);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
 }
 
 /* =========================================================
-   Page layout
+   Layout
    ========================================================= */
 
 .container {
@@ -99,35 +117,43 @@ span.highlight {
   padding-right: 15px;
 }
 
-.common-rows,
-.section-heading-rows {
+.common-rows {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.section-heading-rows {
+  margin: 0 !important;
+}
+
+.section-heading-rows h5 {
+  margin: 0;
+  font-family: var(--font-main);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-strong);
+}
+
 .left-column,
 .right-column,
-.personal-column,
-.name-column {
+.personal-column {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.personal-column,
-.name-column {
+.personal-column {
   margin-left: auto;
   margin-right: auto;
 }
 
-.custom-col-sm-3 {
-  flex: 0 0 25%;
-  max-width: 22%;
-  margin-right: auto;
-}
-
 /* =========================================================
-   Images and logos
+   Intro
    ========================================================= */
+
+.name-line {
+  margin: 12px 0 4px;
+  text-align: left;
+}
 
 .personal-photo {
   display: block;
@@ -137,53 +163,45 @@ span.highlight {
   clip-path: circle();
 }
 
-.paper-images {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: auto;
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 16px;
+  margin: 4px 0 16px;
 }
 
-.cropped-gif {
-  width: 100%;
-  clip-path: inset(20% 0 20% 0);
+.profile-links .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: color .2s ease;
 }
 
-.institute-logo-small {
-  width: 100px;
+.profile-links .pill i {
+  width: 1em;
+  font-size: 13px;
+  text-align: center;
 }
 
-.institute-logo-medium {
-  width: 120px;
-}
-
-/* Optional image fade behavior */
-.one {
-  position: relative;
-  width: 160px;
-  height: 160px;
-}
-
-.two {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-}
-
-.two,
-.fade {
-  transition: opacity 0.2s ease-in-out;
+.profile-links .pill:hover {
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 /* =========================================================
-   Publication filter
+   Publications
    ========================================================= */
 
 .publication-filter {
   display: block;
-  margin-left: 0;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin: 6px 0 0 -5px;
 }
 
 .filter-btn {
@@ -193,7 +211,7 @@ span.highlight {
   color: var(--link-color);
   cursor: pointer;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -207,28 +225,18 @@ span.highlight {
   font-weight: 700;
 }
 
-.spotlight {
-  color: orange;
-  font-weight: 700;
-}
-
-/* Used by the Selected / All publication filter */
 .publication-entry.hidden,
 .selected-publication.hidden {
   display: none !important;
 }
-
-/* =========================================================
-   Publications
-   ========================================================= */
 
 .publication-entry,
 .selected-publication {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 30px !important;
-  margin-bottom: 30px !important;
+  margin-top: var(--entry-gap) !important;
+  margin-bottom: var(--entry-gap) !important;
   transition: opacity 0.3s ease;
 }
 
@@ -256,28 +264,9 @@ span.highlight {
   padding-right: 15px;
 }
 
-.publication-entry .paper-images,
-.selected-publication .paper-images,
-.publication-entry .cropped-gif,
-.selected-publication .cropped-gif {
-  display: block;
-  width: 100% !important;
-  max-width: var(--pub-image-width);
-  height: var(--pub-image-height) !important;
-  object-fit: cover;
-  margin: 0 auto !important;
-  padding: 2% 5%;
-  box-sizing: border-box;
-}
-
-/* Removes extra top space if a publication text column starts with <br> */
+/* The markup wraps entries in <br>s; spacing comes from margins instead */
 .publication-entry .right-column > br:first-child,
-.selected-publication .right-column > br:first-child {
-  display: none;
-}
-
-/* Removes trailing <br><br> so inter-entry gaps stay uniform (driven by margins, not content height).
-   :has() targets only a truly trailing pair, so entries ending in a <p> description are left intact. */
+.selected-publication .right-column > br:first-child,
 .publication-entry .right-column > br:last-child,
 .selected-publication .right-column > br:last-child,
 .publication-entry .right-column > br:has(+ br:last-child),
@@ -285,43 +274,140 @@ span.highlight {
   display: none;
 }
 
+/* Thumbnails: one frame for photos, videos and diagrams.
+   Photos and videos fill the frame; diagrams (thumbs/) are shown whole. */
+.paper-images {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.publication-entry .paper-images,
+.selected-publication .paper-images {
+  width: 100% !important;
+  max-width: var(--pub-image-width);
+  height: var(--pub-image-height) !important;
+  margin: 0 auto !important;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  object-fit: cover !important;
+}
+
+.publication-entry img.paper-images[src*="thumbs/"],
+.selected-publication img.paper-images[src*="thumbs/"] {
+  padding: 8px 10px;
+  object-fit: contain !important;
+}
+
+/* White-background video: give it the same inner margin as diagrams */
+.selected-publication .paper-images[src*="flashdexretarget"],
+.publication-entry .paper-images[src*="flashdexretarget"] {
+  padding: 8px 10px;
+  object-fit: contain !important;
+}
+
+/* Diagram drawn on its own tinted panel: extend the panel colour to the frame */
+.publication-entry .paper-images[src*="dodont"] {
+  background: #ebf0f5;
+}
+
+.publication-entry .paper-images[src*="draftrec"] {
+  padding: 14px 18px;
+  object-fit: contain !important;
+}
+
+/* Authors: names never break; linked names in a softer blue */
+.publication-entry .right-column a,
+.publication-entry .right-column strong,
+.selected-publication .right-column a,
+.selected-publication .right-column strong {
+  white-space: nowrap;
+}
+
+.publication-entry .right-column a,
+.selected-publication .right-column a {
+  color: var(--author-link-color);
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.publication-entry .right-column a:hover,
+.selected-publication .right-column a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.publication-entry .right-column strong,
+.selected-publication .right-column strong {
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+/* Resource links: icon + label, same style as the profile links */
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 14px;
+  margin-top: 4px;
+}
+
+.publication-entry .right-column .paper-links a.paper-link,
+.selected-publication .right-column .paper-links a.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.paper-links a.paper-link i {
+  font-size: 11px;
+}
+
+.publication-entry .right-column .paper-links a.paper-link:hover,
+.selected-publication .right-column .paper-links a.paper-link:hover {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
 /* =========================================================
    Work experience
    ========================================================= */
 
-.experience-section .section-heading-rows {
-  margin-left: 0 !important;
+.experience-section {
+  margin-top: var(--section-gap);
+}
+
+.experience-section > .section-heading-rows {
   margin-top: 36px !important;
-  margin-bottom: 20px !important;
 }
 
 .experience-section .work-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 10px 0 !important;
 }
 
 .experience-section .work-logo-col {
   display: flex;
-  flex: 0 0 22%;
-  max-width: 22%;
   align-items: center;
   justify-content: center;
-  padding-left: 4px;
-  padding-right: 24px;
 }
 
 .experience-section .work-text-col {
   position: relative;
   top: var(--work-text-nudge-y);
   display: flex;
-  flex: 0 0 76%;
-  max-width: 76%;
   flex-direction: column;
   justify-content: center;
-  padding-left: 16px;
-  padding-right: 15px;
 }
 
 .experience-section .work-logo-box {
@@ -329,82 +415,88 @@ span.highlight {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: var(--work-logo-box-height);
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .experience-section .work-logo {
-  max-width: 92%;
-  max-height: 92%;
   object-fit: contain;
 }
 
-.experience-section .work-logo.logo-small {
-  max-width: 78%;
-  max-height: 78%;
-}
-
-.experience-section .work-logo.logo-medium {
-  max-width: 86%;
-  max-height: 86%;
-}
-
-.experience-section .work-logo.logo-large {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .experience-section ul {
-  margin-top: 0.5em;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0.5em 0 0;
   padding-left: 0;
   list-style: none;
 }
 
-/* Support older work-experience markup that uses left/right columns */
-.experience-section > .row.common-rows {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 0 !important;
-  margin-top: 14px !important;
-  margin-bottom: 14px !important;
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.site-footer {
+  margin: 24px 0;
+  color: var(--text-faint);
+  text-align: right;
 }
 
-.experience-section > .row.common-rows > .left-column,
-.experience-section > .row.common-rows > .right-column {
-  align-self: center;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.experience-section > .row.common-rows > .left-column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.experience-section > .row.common-rows > .left-column > div {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 110px !important;
-}
-
-.experience-section > .row.common-rows > .right-column {
-  position: relative;
-  top: var(--work-text-nudge-y);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.site-footer,
+.site-footer a {
+  font-size: 12px;
 }
 
 /* =========================================================
-   Mobile layout
+   Desktop (≥577px)
    ========================================================= */
 
-@media screen and (max-width: 576px) {
+@media (min-width: 577px) {
+  /* The work section is nested inside the main container */
+  .container .experience-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Work rows are text-height (~85px), so a tighter gap reads like the publication gap */
+  .experience-section .work-row {
+    margin: 22px -15px !important;
+  }
+
+  .experience-section .work-logo-col {
+    flex: 0 0 var(--pub-figure-col);
+    max-width: var(--pub-figure-col);
+    padding-left: 15px;
+    padding-right: calc(var(--pub-gap) / 2);
+  }
+
+  .experience-section .work-text-col {
+    flex: 0 0 var(--pub-content-col);
+    max-width: var(--pub-content-col);
+    padding-left: calc(var(--pub-gap) / 2);
+    padding-right: 15px;
+  }
+
+  .experience-section .work-logo-box {
+    max-width: 126px;
+    height: 88px;
+    margin: 0 auto;
+  }
+
+  /* Optically balanced logo sizes */
+  .experience-section .work-logo[src*="ci_holiday"] { width: 123px; }
+  .experience-section .work-logo[src*="ci_meta"]    { width: 119px; }
+  .experience-section .work-logo[src*="ci_krafton"] { width: 114px; }
+  .experience-section .work-logo[src*="ci_sony_ai"] { width: 105px; }
+  .experience-section .work-logo[src*="ci_kakao"]   { width: 101px; }
+  .experience-section .work-logo[src*="ci_neowiz"]  { height: 64px; }
+}
+
+/* =========================================================
+   Mobile (≤576px)
+   ========================================================= */
+
+@media (max-width: 576px) {
+  .name-line {
+    text-align: center;
+  }
+
   .personal-photo {
     width: 80%;
     max-width: 200px;
@@ -412,27 +504,9 @@ span.highlight {
     padding-bottom: 10px;
   }
 
-  .paper-images {
-    width: 100%;
-    max-width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .custom-col-sm-3 {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   .publication-entry,
   .selected-publication {
     display: block;
-    margin-top: 22px !important;
-    margin-bottom: 22px !important;
   }
 
   .publication-entry > .custom-col-sm-3,
@@ -442,9 +516,14 @@ span.highlight {
     width: 100%;
     max-width: 100%;
     flex: 0 0 100%;
-    margin: 0 !important;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .publication-entry > .custom-col-sm-3,
+  .selected-publication > .custom-col-sm-3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .publication-entry > .right-column,
@@ -453,19 +532,19 @@ span.highlight {
   }
 
   .publication-entry .paper-images,
-  .selected-publication .paper-images,
-  .publication-entry .cropped-gif,
-  .selected-publication .cropped-gif {
+  .selected-publication .paper-images {
     max-width: 220px;
     height: auto !important;
-    margin: 0 auto 12px auto !important;
+    margin: 0 auto 12px !important;
   }
 
-  .experience-section .work-row,
-  .experience-section > .row.common-rows {
+  .experience-section .work-row {
     display: block;
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
+    margin: 24px 0 !important;
+  }
+
+  .experience-section > .section-heading-rows + .work-row {
+    margin-top: 0 !important;
   }
 
   .experience-section .work-logo-col,
@@ -477,8 +556,7 @@ span.highlight {
     padding-right: 15px;
   }
 
-  .experience-section .work-text-col,
-  .experience-section > .row.common-rows > .right-column {
+  .experience-section .work-text-col {
     top: 0;
   }
 
@@ -487,40 +565,8 @@ span.highlight {
     margin-bottom: 10px;
   }
 
-  /* Cap logo size on mobile so wide wordmarks don't span the full screen width */
   .experience-section .work-logo {
-    max-width: 160px !important;
-    max-height: 80px !important;
+    max-width: 160px;
+    max-height: 80px;
   }
-
-  .experience-section > .row.common-rows > .left-column > div {
-    height: 90px !important;
-  }
-}
-
-
-/* Work Experience */
-.experience-section .section-heading-rows {
-  margin-bottom: 0px !important;
-}
-
-.experience-section .section-heading-rows + .work-row,
-.experience-section .work-row:first-of-type {
-  margin-top: 0 !important;
-}
-
-/* Publications */
-.publication-section .section-heading-rows {
-  margin-bottom: 0px !important;
-}
-
-.publication-section .publication-filter {
-  margin-bottom: 0px !important;
-}
-
-.publication-section .section-heading-rows + .publication-entry,
-.publication-section .publication-filter + .publication-entry,
-.publication-section .section-heading-rows + .selected-publication,
-.publication-section .publication-filter + .selected-publication {
-  margin-top: -8px !important;
 }
