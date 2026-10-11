@@ -304,8 +304,7 @@ name {
 
 /* White-background video: give it the same inner margin as diagrams */
 .selected-publication .paper-images[src*="flashdexretarget"],
-.publication-entry .paper-images[src*="flashdexretarget"],
-.selected-publication .paper-images[src*="discodemo"] {
+.publication-entry .paper-images[src*="flashdexretarget"] {
   padding: 8px 10px;
   object-fit: contain !important;
 }
